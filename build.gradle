@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['src/test/java']
+        }
+    }
+}
+
+application {
+    mainClass = 'RunEdgeConvert'
+}
+
+test {
+    useJUnit()
+}
+
+// Task to copy courses.edge file to build directory
+task copyCourseFile(type: Copy) {
+    from 'src/main/resources/courses.edge'
+    into 'build/resources/main'
+}
+
+// Make sure copyCourseFile runs before the run task
+run.dependsOn copyCourseFile
