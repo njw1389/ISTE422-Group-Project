@@ -1,0 +1,13 @@
+18:53:14.132 [main] INFO  RunEdgeConvert - Starting EdgeConvert application
+18:53:14.136 [main] INFO  EdgeConvertGUI - Initializing EdgeConvertGUI
+18:53:14.136 [main] INFO  EdgeConvertGUI - Showing GUI
+18:53:14.308 [main] DEBUG EdgeConvertGUI - Set system look and feel
+18:53:14.308 [main] INFO  EdgeConvertGUI - Creating Define Tables screen
+18:53:14.994 [main] INFO  EdgeConvertGUI - Creating Define Relations screen
+18:53:15.012 [main] INFO  RunEdgeConvert - EdgeConvert GUI initialized
+18:53:15.012 [main] INFO  RunEdgeConvert - EdgeConvert application finished
+18:53:20.316 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeMenuListener: Action performed on Set Output File Definition Location
+18:53:20.317 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Setting output directory
+18:53:26.918 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeMenuListener: Action performed on Open Edge File
+18:53:33.366 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeMenuListener: Action performed on Open Save File
+18:57:42.059 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Window closing event triggered

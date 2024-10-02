@@ -19,7 +19,7 @@
 @if "%DEBUG%"=="" @echo off
 @rem ##########################################################################
 @rem
-@rem  rit-iste422-project-2241 startup script for Windows
+@rem  ISTE422-Group-Project startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -35,7 +35,7 @@ set APP_HOME=%DIRNAME%..
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and RIT_ISTE422_PROJECT_2241_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and IST_E422_GROUP_PROJECT_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -70,22 +70,22 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\rit-iste422-project-2241.jar
+set CLASSPATH=%APP_HOME%\lib\ISTE422-Group-Project.jar;%APP_HOME%\lib\log4j-core-2.24.1.jar;%APP_HOME%\lib\log4j-api-2.24.1.jar
 
 
-@rem Execute rit-iste422-project-2241
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %RIT_ISTE422_PROJECT_2241_OPTS%  -classpath "%CLASSPATH%" RunEdgeConvert %*
+@rem Execute ISTE422-Group-Project
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %IST_E422_GROUP_PROJECT_OPTS%  -classpath "%CLASSPATH%" RunEdgeConvert %*
 
 :end
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
 
 :fail
-rem Set variable RIT_ISTE422_PROJECT_2241_EXIT_CONSOLE if you need the _script_ return code instead of
+rem Set variable IST_E422_GROUP_PROJECT_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
 set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
-if not ""=="%RIT_ISTE422_PROJECT_2241_EXIT_CONSOLE%" exit %EXIT_CODE%
+if not ""=="%IST_E422_GROUP_PROJECT_EXIT_CONSOLE%" exit %EXIT_CODE%
 exit /b %EXIT_CODE%
 
 :mainEnd

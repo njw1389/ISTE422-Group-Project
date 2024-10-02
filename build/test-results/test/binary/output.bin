@@ -1,0 +1,46 @@
+^18:53:11.519 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.525 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.525 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+^18:53:11.527 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.527 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.527 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+^18:53:11.527 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.527 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.527 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+^18:53:11.528 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.528 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.528 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+^18:53:11.528 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.528 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.528 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+^18:53:11.530 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.530 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.530 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+^18:53:11.530 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.530 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.531 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+	^18:53:11.531 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+	[18:53:11.531 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+	•18:53:11.531 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+
+^18:53:11.531 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+[18:53:11.531 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+
+•18:53:11.532 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+^18:53:11.532 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.532 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.532 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+N18:53:11.532 [Test worker] DEBUG EdgeConnector - Setting isEP1Field to: false
+^18:53:11.532 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.533 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.533 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+N18:53:11.533 [Test worker] DEBUG EdgeConnector - Setting isEP1Table to: false
+^18:53:11.533 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.533 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.533 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+N18:53:11.533 [Test worker] DEBUG EdgeConnector - Setting isEP2Field to: false
+^18:53:11.534 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+[18:53:11.534 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+•18:53:11.534 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
+N18:53:11.534 [Test worker] DEBUG EdgeConnector - Setting isEP2Table to: false
