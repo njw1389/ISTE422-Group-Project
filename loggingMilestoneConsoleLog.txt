@@ -1,279 +1,205 @@
-> Task :compileJava
-/Users/nolanwira/RIT Semester Fall 24/ISTE422 - App Development Practices/ISTE422-Group-Project/src/main/java/EdgeTable.java:36: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
-      alRelatedTables.add(new Integer(relatedTable));
-                          ^
-/Users/nolanwira/RIT Semester Fall 24/ISTE422 - App Development Practices/ISTE422-Group-Project/src/main/java/EdgeTable.java:61: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
-      alNativeFields.add(new Integer(value));
-                         ^
-/Users/nolanwira/RIT Semester Fall 24/ISTE422 - App Development Practices/ISTE422-Group-Project/src/main/java/EdgeConvertGUI.java:1080: warning: non-varargs call of varargs method with inexact argument type for last parameter;
-                  objOutput = conResultClass.newInstance(null);
-                                                         ^
-  cast to Object for a varargs call
-  cast to Object[] for a non-varargs call and to suppress this warning
-/Users/nolanwira/RIT Semester Fall 24/ISTE422 - App Development Practices/ISTE422-Group-Project/src/main/java/EdgeConvertGUI.java:1086: warning: non-varargs call of varargs method with inexact argument type for last parameter;
-               Method getProductName = resultClass.getMethod("getProductName", null);
-                                                                               ^
-  cast to Class for a varargs call
-  cast to Class[] for a non-varargs call and to suppress this warning
-/Users/nolanwira/RIT Semester Fall 24/ISTE422 - App Development Practices/ISTE422-Group-Project/src/main/java/EdgeConvertGUI.java:1087: warning: non-varargs call of varargs method with inexact argument type for last parameter;
-               String productName = (String)getProductName.invoke(objOutput, null);
-                                                                             ^
-  cast to Object for a varargs call
-  cast to Object[] for a non-varargs call and to suppress this warning
-/Users/nolanwira/RIT Semester Fall 24/ISTE422 - App Development Practices/ISTE422-Group-Project/src/main/java/EdgeConvertGUI.java:1134: warning: non-varargs call of varargs method with inexact argument type for last parameter;
-         Method getSQLString = selectedSubclass.getMethod("getSQLString", null);
-                                                                          ^
-  cast to Class for a varargs call
-  cast to Class[] for a non-varargs call and to suppress this warning
-/Users/nolanwira/RIT Semester Fall 24/ISTE422 - App Development Practices/ISTE422-Group-Project/src/main/java/EdgeConvertGUI.java:1135: warning: non-varargs call of varargs method with inexact argument type for last parameter;
-         Method getDatabaseName = selectedSubclass.getMethod("getDatabaseName", null);
-                                                                                ^
-  cast to Class for a varargs call
-  cast to Class[] for a non-varargs call and to suppress this warning
-/Users/nolanwira/RIT Semester Fall 24/ISTE422 - App Development Practices/ISTE422-Group-Project/src/main/java/EdgeConvertGUI.java:1136: warning: non-varargs call of varargs method with inexact argument type for last parameter;
-         strSQLString = (String)getSQLString.invoke(objSubclasses[selected], null);
-                                                                             ^
-  cast to Object for a varargs call
-  cast to Object[] for a non-varargs call and to suppress this warning
-/Users/nolanwira/RIT Semester Fall 24/ISTE422 - App Development Practices/ISTE422-Group-Project/src/main/java/EdgeConvertGUI.java:1137: warning: non-varargs call of varargs method with inexact argument type for last parameter;
-         databaseName = (String)getDatabaseName.invoke(objSubclasses[selected], null);
-                                                                                ^
-  cast to Object for a varargs call
-  cast to Object[] for a non-varargs call and to suppress this warning
-Note: Some input files use unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-9 warnings
+nolanwira@MacBookPro ISTE422-Group-Project % gradle run
 
 > Task :run
-21:20:47.895 [main] INFO  RunEdgeConvert - Starting EdgeConvert application
-21:20:47.900 [main] INFO  EdgeConvertGUI - Initializing EdgeConvertGUI
-21:20:47.900 [main] INFO  EdgeConvertGUI - Showing GUI
-21:20:48.101 [main] DEBUG EdgeConvertGUI - Set system look and feel
-21:20:48.101 [main] INFO  EdgeConvertGUI - Creating Define Tables screen
-2024-10-04 21:20:48.180 java[17733:2872027] +[IMKClient subclass]: chose IMKClient_Legacy
-2024-10-04 21:20:48.180 java[17733:2872027] +[IMKInputSession subclass]: chose IMKInputSession_Legacy
-21:20:48.948 [main] INFO  EdgeConvertGUI - Creating Define Relations screen
-21:20:48.965 [main] INFO  RunEdgeConvert - EdgeConvert GUI initialized
-21:20:48.965 [main] INFO  RunEdgeConvert - EdgeConvert application finished
-21:20:54.593 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeMenuListener: Action performed on Set Output File Definition Location
-21:20:54.594 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Setting output directory
-21:20:58.579 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeMenuListener: Action performed on About
-21:21:01.920 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeMenuListener: Action performed on Open Edge File
-21:21:10.816 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: Courses.edg
-21:21:10.816 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Opening file: Courses.edg
-21:21:10.816 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
-21:21:10.816 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Parsing Edge file
-21:21:10.817 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 1
-21:21:10.820 [AWT-EventQueue-0] INFO  EdgeTable - Creating new EdgeTable from input string
-21:21:10.820 [AWT-EventQueue-0] DEBUG EdgeTable - Input string: 1|STUDENT
-21:21:10.820 [AWT-EventQueue-0] DEBUG EdgeTable - EdgeTable created: numFigure=1, name=STUDENT
-21:21:10.820 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 2
-21:21:10.820 [AWT-EventQueue-0] INFO  EdgeTable - Creating new EdgeTable from input string
-21:21:10.820 [AWT-EventQueue-0] DEBUG EdgeTable - Input string: 2|FACULTY
-21:21:10.821 [AWT-EventQueue-0] DEBUG EdgeTable - EdgeTable created: numFigure=2, name=FACULTY
-21:21:10.821 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 3
-21:21:10.821 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
-21:21:10.821 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 3|Grade
-21:21:10.821 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=3, name=Grade
-21:21:10.821 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
-21:21:10.821 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 4
-21:21:10.821 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
-21:21:10.821 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 4|CourseName
-21:21:10.821 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=4, name=CourseName
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 5
-21:21:10.822 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 5|Number
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=5, name=Number
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 6
-21:21:10.822 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 6|FacSSN
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=6, name=FacSSN
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
-21:21:10.822 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 7
-21:21:10.822 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
-21:21:10.823 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 7|StudentSSN
-21:21:10.823 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=7, name=StudentSSN
-21:21:10.823 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
-21:21:10.823 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 8
-21:21:10.823 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
-21:21:10.823 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 8|StudentName
-21:21:10.823 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=8, name=StudentName
-21:21:10.823 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
-21:21:10.823 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 9
-21:21:10.826 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.826 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 9|1|7|null|null
-21:21:10.826 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=9, endPoint1=1, endPoint2=7, endStyle1=null, endStyle2=null
-21:21:10.827 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 10
-21:21:10.827 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.827 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 10|1|8|null|null
-21:21:10.827 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=10, endPoint1=1, endPoint2=8, endStyle1=null, endStyle2=null
-21:21:10.827 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 11
-21:21:10.827 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
-21:21:10.827 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 11|FacultyName
-21:21:10.827 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=11, name=FacultyName
-21:21:10.827 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 12
-21:21:10.828 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 12|2|11|null|null
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=12, endPoint1=2, endPoint2=11, endStyle1=null, endStyle2=null
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 13
-21:21:10.828 [AWT-EventQueue-0] INFO  EdgeTable - Creating new EdgeTable from input string
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeTable - Input string: 13|COURSES
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeTable - EdgeTable created: numFigure=13, name=COURSES
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 14
-21:21:10.828 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 14|1|15|ER mand many|ER opt many
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=14, endPoint1=1, endPoint2=15, endStyle1=ER mand many, endStyle2=ER opt many
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 15
-21:21:10.828 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 16
-21:21:10.828 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 16|15|13|ER mand many|ER opt many
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=16, endPoint1=15, endPoint2=13, endStyle1=ER mand many, endStyle2=ER opt many
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 17
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 18
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 19
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 20
-21:21:10.829 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 20|2|13|ER single|ER opt many
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=20, endPoint1=2, endPoint2=13, endStyle1=ER single, endStyle2=ER opt many
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 21
-21:21:10.829 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 21|15|3|null|null
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=21, endPoint1=15, endPoint2=3, endStyle1=null, endStyle2=null
-21:21:10.829 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 22
-21:21:10.830 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 22|-1|13|null|null
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=22, endPoint1=-1, endPoint2=13, endStyle1=null, endStyle2=null
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 23
-21:21:10.830 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 23|5|13|null|null
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=23, endPoint1=5, endPoint2=13, endStyle1=null, endStyle2=null
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 24
-21:21:10.830 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 24|6|2|null|null
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=24, endPoint1=6, endPoint2=2, endStyle1=null, endStyle2=null
-21:21:10.830 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Finished parsing Edge file
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Converting ArrayLists to arrays
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Created tables array with 3 elements
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Created fields array with 7 elements
-21:21:10.830 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Created connectors array with 10 elements
-21:21:10.831 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Resolving connectors
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 0
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Field to: true
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 7
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 1
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 1
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Field to: true
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 8
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 1
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 2
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Field to: true
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 11
-21:21:10.831 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 2
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 3
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 4
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 5
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeTable - Adding related table: 13
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeTable - Adding related table: 2
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 6
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Field to: true
-21:21:10.832 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 3
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 13
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 7
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 8
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Field to: true
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 5
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 13
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 9
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Field to: true
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 6
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 2
-21:21:10.833 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Finished resolving connectors
-21:21:10.833 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Finished processing file: Courses.edg
-21:21:10.833 [AWT-EventQueue-0] INFO  EdgeTable - Converting ArrayLists to arrays
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeTable - Arrays created: nativeFields=2, relatedTables=0, relatedFields=2
-21:21:10.833 [AWT-EventQueue-0] INFO  EdgeTable - Converting ArrayLists to arrays
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeTable - Arrays created: nativeFields=2, relatedTables=1, relatedFields=2
-21:21:10.833 [AWT-EventQueue-0] INFO  EdgeTable - Converting ArrayLists to arrays
-21:21:10.833 [AWT-EventQueue-0] DEBUG EdgeTable - Arrays created: nativeFields=2, relatedTables=1, relatedFields=2
-21:21:10.833 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Populating lists
-21:21:10.834 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Disabling controls
-21:21:10.834 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Depopulating lists
-21:21:11.775 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables table: STUDENT
-21:21:11.775 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT table set to: STUDENT
-21:21:11.776 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Disabling controls
-21:21:11.855 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables table: STUDENT
-21:21:11.855 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT table set to: STUDENT
-21:21:11.855 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Disabling controls
-21:21:13.004 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: StudentSSN
-21:21:13.004 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: StudentSSN
-21:21:13.004 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:13.078 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: StudentSSN
-21:21:13.078 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: StudentSSN
-21:21:13.078 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:14.156 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeRadioButtonListener: Action performed
-21:21:14.156 [AWT-EventQueue-0] DEBUG EdgeField - Attempting to set dataType to: 1
-21:21:14.156 [AWT-EventQueue-0] INFO  EdgeField - dataType set to: 1 (Boolean)
-21:21:14.156 [AWT-EventQueue-0] DEBUG EdgeField - Setting defaultValue to: 
-21:21:14.818 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeRadioButtonListener: Action performed
-21:21:14.818 [AWT-EventQueue-0] DEBUG EdgeField - Attempting to set dataType to: 0
-21:21:14.818 [AWT-EventQueue-0] INFO  EdgeField - dataType set to: 0 (Varchar)
-21:21:14.819 [AWT-EventQueue-0] DEBUG EdgeField - Setting defaultValue to: 
-21:21:15.769 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables table: FACULTY
-21:21:15.770 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT table set to: FACULTY
-21:21:15.771 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Disabling controls
-21:21:15.868 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables table: FACULTY
-21:21:15.869 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT table set to: FACULTY
-21:21:15.869 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Disabling controls
-21:21:17.038 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: FacSSN
-21:21:17.038 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: FacSSN
-21:21:17.038 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:17.111 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: FacSSN
-21:21:17.111 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: FacSSN
-21:21:17.111 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:17.576 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: FacultyName
-21:21:17.576 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: FacultyName
-21:21:17.576 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:17.651 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: FacultyName
-21:21:17.651 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: FacultyName
-21:21:17.651 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:18.342 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables table: COURSES
-21:21:18.342 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT table set to: COURSES
-21:21:18.342 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Disabling controls
-21:21:18.415 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables table: COURSES
-21:21:18.416 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT table set to: COURSES
-21:21:18.416 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Disabling controls
-21:21:18.944 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: Number
-21:21:18.945 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: Number
-21:21:18.945 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:19.028 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: Number
-21:21:19.028 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: Number
-21:21:19.028 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:19.631 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: Grade
-21:21:19.631 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: Grade
-21:21:19.631 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:19.689 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Setting current Define Tables field: Grade
-21:21:19.689 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Current DT field set to: Grade
-21:21:19.689 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Enabling controls
-21:21:20.943 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeRadioButtonListener: Action performed
-21:21:20.943 [AWT-EventQueue-0] DEBUG EdgeField - Attempting to set dataType to: 2
-21:21:20.943 [AWT-EventQueue-0] INFO  EdgeField - dataType set to: 2 (Integer)
-21:21:20.943 [AWT-EventQueue-0] DEBUG EdgeField - Setting defaultValue to: 
-21:21:22.126 [AWT-EventQueue-0] DEBUG EdgeField - Setting disallowNull to: true
-21:21:22.809 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: true
-21:21:26.510 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Window closing event triggered
+16:42:38.357 [main] INFO  RunEdgeConvert - Starting EdgeConvert application
+16:42:38.362 [main] INFO  EdgeConvertGUI - Initializing EdgeConvertGUI
+16:42:38.362 [main] INFO  EdgeConvertGUI - Showing GUI
+16:42:38.533 [main] DEBUG EdgeConvertGUI - Set system look and feel
+16:42:38.533 [main] INFO  EdgeConvertGUI - Creating Define Tables screen
+2024-10-06 16:42:38.617 java[62048:4594746] +[IMKClient subclass]: chose IMKClient_Legacy
+2024-10-06 16:42:38.617 java[62048:4594746] +[IMKInputSession subclass]: chose IMKInputSession_Legacy
+16:42:39.146 [main] INFO  EdgeConvertGUI - Creating Define Relations screen
+16:42:39.166 [main] INFO  RunEdgeConvert - EdgeConvert GUI initialized
+16:42:39.166 [main] INFO  RunEdgeConvert - EdgeConvert application finished
+16:42:46.714 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeMenuListener: Action performed on Open Edge File
+16:42:55.435 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: Courses.edg
+16:42:55.436 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Opening file: Courses.edg
+16:42:55.436 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+16:42:55.436 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Parsing Edge file
+16:42:55.437 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 1
+16:42:55.440 [AWT-EventQueue-0] INFO  EdgeTable - Creating new EdgeTable from input string
+16:42:55.440 [AWT-EventQueue-0] DEBUG EdgeTable - Input string: 1|STUDENT
+16:42:55.440 [AWT-EventQueue-0] DEBUG EdgeTable - EdgeTable created: numFigure=1, name=STUDENT
+16:42:55.440 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 2
+16:42:55.440 [AWT-EventQueue-0] INFO  EdgeTable - Creating new EdgeTable from input string
+16:42:55.441 [AWT-EventQueue-0] DEBUG EdgeTable - Input string: 2|FACULTY
+16:42:55.441 [AWT-EventQueue-0] DEBUG EdgeTable - EdgeTable created: numFigure=2, name=FACULTY
+16:42:55.441 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 3
+16:42:55.441 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
+16:42:55.441 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 3|Grade
+16:42:55.441 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=3, name=Grade
+16:42:55.441 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
+16:42:55.441 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 4
+16:42:55.441 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
+16:42:55.441 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 4|CourseName
+16:42:55.442 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=4, name=CourseName
+16:42:55.442 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
+16:42:55.442 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 5
+16:42:55.442 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
+16:42:55.442 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 5|Number
+16:42:55.442 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=5, name=Number
+16:42:55.442 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
+16:42:55.442 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 6
+16:42:55.442 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
+16:42:55.442 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 6|FacSSN
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=6, name=FacSSN
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 7
+16:42:55.443 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 7|StudentSSN
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=7, name=StudentSSN
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 8
+16:42:55.443 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 8|StudentName
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=8, name=StudentName
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
+16:42:55.443 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 9
+16:42:55.447 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.447 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 9|1|7|null|null
+16:42:55.447 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=9, endPoint1=1, endPoint2=7, endStyle1=null, endStyle2=null
+16:42:55.447 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 10
+16:42:55.447 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.447 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 10|1|8|null|null
+16:42:55.447 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=10, endPoint1=1, endPoint2=8, endStyle1=null, endStyle2=null
+16:42:55.447 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 11
+16:42:55.447 [AWT-EventQueue-0] INFO  EdgeField - Creating new EdgeField from input string
+16:42:55.447 [AWT-EventQueue-0] DEBUG EdgeField - Input string: 11|FacultyName
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeField - EdgeField created: numFigure=11, name=FacultyName
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeField - Setting isPrimaryKey to: false
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 12
+16:42:55.448 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 12|2|11|null|null
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=12, endPoint1=2, endPoint2=11, endStyle1=null, endStyle2=null
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 13
+16:42:55.448 [AWT-EventQueue-0] INFO  EdgeTable - Creating new EdgeTable from input string
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeTable - Input string: 13|COURSES
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeTable - EdgeTable created: numFigure=13, name=COURSES
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 14
+16:42:55.448 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 14|1|15|ER mand many|ER opt many
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=14, endPoint1=1, endPoint2=15, endStyle1=ER mand many, endStyle2=ER opt many
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 15
+16:42:55.448 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 16
+16:42:55.449 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 16|15|13|ER mand many|ER opt many
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=16, endPoint1=15, endPoint2=13, endStyle1=ER mand many, endStyle2=ER opt many
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 17
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 18
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Figure: Figure 19
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 20
+16:42:55.449 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 20|2|13|ER single|ER opt many
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=20, endPoint1=2, endPoint2=13, endStyle1=ER single, endStyle2=ER opt many
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 21
+16:42:55.449 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 21|15|3|null|null
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=21, endPoint1=15, endPoint2=3, endStyle1=null, endStyle2=null
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 22
+16:42:55.449 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.449 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 22|-1|13|null|null
+16:42:55.450 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=22, endPoint1=-1, endPoint2=13, endStyle1=null, endStyle2=null
+16:42:55.450 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 23
+16:42:55.450 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.450 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 23|5|13|null|null
+16:42:55.450 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=23, endPoint1=5, endPoint2=13, endStyle1=null, endStyle2=null
+16:42:55.450 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing Connector: Connector 24
+16:42:55.450 [AWT-EventQueue-0] INFO  EdgeConnector - Creating new EdgeConnector from input string
+16:42:55.450 [AWT-EventQueue-0] DEBUG EdgeConnector - Input string: 24|6|2|null|null
+16:42:55.450 [AWT-EventQueue-0] DEBUG EdgeConnector - Parsed values: numConnector=24, endPoint1=6, endPoint2=2, endStyle1=null, endStyle2=null
+16:42:55.450 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Finished parsing Edge file
+16:42:55.450 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Converting ArrayLists to arrays
+16:42:55.450 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Created tables array with 3 elements
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Created fields array with 7 elements
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Created connectors array with 10 elements
+16:42:55.451 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Resolving connectors
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 0
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Field to: true
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 7
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 1
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 1
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Field to: true
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 8
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 1
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 2
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Field to: true
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 11
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 2
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 3
+16:42:55.451 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 4
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 5
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Table to: true
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeTable - Adding related table: 13
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeTable - Adding related table: 2
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 6
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Field to: true
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 3
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 13
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 7
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 8
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Field to: true
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 5
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 13
+16:42:55.452 [AWT-EventQueue-0] DEBUG EdgeConvertFileParser - Processing connector 9
+16:42:55.453 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP1Field to: true
+16:42:55.453 [AWT-EventQueue-0] DEBUG EdgeConnector - Setting isEP2Table to: true
+16:42:55.453 [AWT-EventQueue-0] DEBUG EdgeTable - Adding native field: 6
+16:42:55.453 [AWT-EventQueue-0] DEBUG EdgeField - Setting tableID to: 2
+16:42:55.453 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Finished resolving connectors
+16:42:55.453 [AWT-EventQueue-0] INFO  EdgeConvertFileParser - Finished processing file: Courses.edg
+16:42:55.453 [AWT-EventQueue-0] INFO  EdgeTable - Converting ArrayLists to arrays
+16:42:55.453 [AWT-EventQueue-0] DEBUG EdgeTable - Arrays created: nativeFields=2, relatedTables=0, relatedFields=2
+16:42:55.453 [AWT-EventQueue-0] INFO  EdgeTable - Converting ArrayLists to arrays
+16:42:55.453 [AWT-EventQueue-0] DEBUG EdgeTable - Arrays created: nativeFields=2, relatedTables=1, relatedFields=2
+16:42:55.453 [AWT-EventQueue-0] INFO  EdgeTable - Converting ArrayLists to arrays
+16:42:55.453 [AWT-EventQueue-0] DEBUG EdgeTable - Arrays created: nativeFields=2, relatedTables=1, relatedFields=2
+16:42:55.453 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Populating lists
+16:42:55.454 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - Disabling controls
+16:42:55.455 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Depopulating lists
+16:42:59.913 [AWT-EventQueue-0] DEBUG EdgeConvertGUI - EdgeMenuListener: Action performed on Save As...
+16:42:59.914 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Performing Save As operation
+16:43:13.691 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Writing save file
+16:43:13.694 [AWT-EventQueue-0] DEBUG EdgeTable - toString() result: Table: 1
+{
+TableName: STUDENT
+NativeFields: 7|8
+RelatedTables: 
+RelatedFields: 0|0
+}
 
-BUILD SUCCESSFUL in 41s
-3 actionable tasks: 3 executed
+16:43:13.694 [AWT-EventQueue-0] DEBUG EdgeTable - toString() result: Table: 2
+{
+TableName: FACULTY
+NativeFields: 11|6
+RelatedTables: 13
+RelatedFields: 0|0
+}
+
+16:43:13.694 [AWT-EventQueue-0] DEBUG EdgeTable - toString() result: Table: 13
+{
+TableName: COURSES
+NativeFields: 3|5
+RelatedTables: 2
+RelatedFields: 0|0
+}
+
+16:43:13.700 [AWT-EventQueue-0] DEBUG EdgeField - toString() called, returning: 3|Grade|13|0|0|0|1|false|false|
+16:43:13.701 [AWT-EventQueue-0] DEBUG EdgeField - toString() called, returning: 4|CourseName|0|0|0|0|1|false|false|
+16:43:13.701 [AWT-EventQueue-0] DEBUG EdgeField - toString() called, returning: 5|Number|13|0|0|0|1|false|false|
+16:43:13.701 [AWT-EventQueue-0] DEBUG EdgeField - toString() called, returning: 6|FacSSN|2|0|0|0|1|false|false|
+16:43:13.701 [AWT-EventQueue-0] DEBUG EdgeField - toString() called, returning: 7|StudentSSN|1|0|0|0|1|false|false|
+16:43:13.701 [AWT-EventQueue-0] DEBUG EdgeField - toString() called, returning: 8|StudentName|1|0|0|0|1|false|false|
+16:43:13.701 [AWT-EventQueue-0] DEBUG EdgeField - toString() called, returning: 11|FacultyName|2|0|0|0|1|false|false|
+16:43:17.616 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Window closing event triggered
+
+BUILD SUCCESSFUL in 40s
+3 actionable tasks: 1 executed, 2 up-to-date
+nolanwira@MacBookPro ISTE422-Group-Project % 
