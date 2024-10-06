@@ -1,103 +1,56 @@
-R20:56:38.321 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.323 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.327 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.327 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.327 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@4f1bfe23
-N20:56:38.327 [Test worker] INFO  EdgeConnectorTest - Running testGetEndPoint1
-M20:56:38.328 [Test worker] INFO  EdgeConnectorTest - testGetEndPoint1 passed
-R20:56:38.328 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.329 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.329 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.329 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.329 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@3f270e0a
-N20:56:38.329 [Test worker] INFO  EdgeConnectorTest - Running testGetEndPoint2
-M20:56:38.329 [Test worker] INFO  EdgeConnectorTest - testGetEndPoint2 passed
-R20:56:38.329 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.329 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.329 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.330 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.330 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@1a760689
-N20:56:38.330 [Test worker] INFO  EdgeConnectorTest - Running testGetEndStyle1
-M20:56:38.330 [Test worker] INFO  EdgeConnectorTest - testGetEndStyle1 passed
-R20:56:38.330 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.331 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.331 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.332 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.332 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@7241a47d
-N20:56:38.332 [Test worker] INFO  EdgeConnectorTest - Running testGetEndStyle2
-M20:56:38.332 [Test worker] INFO  EdgeConnectorTest - testGetEndStyle2 passed
-R20:56:38.332 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.333 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.333 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.333 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.333 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@70f59913
-Q20:56:38.333 [Test worker] INFO  EdgeConnectorTest - Running testGetNumConnector
-_20:56:38.333 [Test worker] DEBUG EdgeConnectorTest - optionone not set, using default value: 1
-P20:56:38.333 [Test worker] INFO  EdgeConnectorTest - testGetNumConnector passed
-R20:56:38.333 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.333 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.334 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.334 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.334 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@77258e59
-O20:56:38.334 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP1Field
-N20:56:38.334 [Test worker] INFO  EdgeConnectorTest - testGetIsEP1Field passed
-R20:56:38.334 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.334 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.334 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.334 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.334 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@5dcd8c7a
-O20:56:38.335 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP1Table
-N20:56:38.335 [Test worker] INFO  EdgeConnectorTest - testGetIsEP1Table passed
-	R20:56:38.335 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-	^20:56:38.335 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-	[20:56:38.335 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-	•20:56:38.335 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-	c20:56:38.335 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@2250b9f2
-	O20:56:38.335 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP2Field
-	N20:56:38.335 [Test worker] INFO  EdgeConnectorTest - testGetIsEP2Field passed
+R18:02:12.611 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.613 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+N18:02:12.619 [Test worker] INFO  EdgeConnectorTest - Running testGetEndPoint1
+M18:02:12.620 [Test worker] INFO  EdgeConnectorTest - testGetEndPoint1 passed
+R18:02:12.621 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.621 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+N18:02:12.621 [Test worker] INFO  EdgeConnectorTest - Running testGetEndPoint2
+M18:02:12.621 [Test worker] INFO  EdgeConnectorTest - testGetEndPoint2 passed
+R18:02:12.621 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.621 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+N18:02:12.622 [Test worker] INFO  EdgeConnectorTest - Running testGetEndStyle1
+M18:02:12.622 [Test worker] INFO  EdgeConnectorTest - testGetEndStyle1 passed
+R18:02:12.622 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.622 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+N18:02:12.622 [Test worker] INFO  EdgeConnectorTest - Running testGetEndStyle2
+M18:02:12.622 [Test worker] INFO  EdgeConnectorTest - testGetEndStyle2 passed
+R18:02:12.623 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.623 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+Q18:02:12.623 [Test worker] INFO  EdgeConnectorTest - Running testGetNumConnector
+P18:02:12.625 [Test worker] INFO  EdgeConnectorTest - testGetNumConnector passed
+R18:02:12.625 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.625 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+O18:02:12.625 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP1Field
+N18:02:12.625 [Test worker] INFO  EdgeConnectorTest - testGetIsEP1Field passed
+R18:02:12.625 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.625 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+O18:02:12.626 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP1Table
+N18:02:12.626 [Test worker] INFO  EdgeConnectorTest - testGetIsEP1Table passed
+	R18:02:12.626 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+	^18:02:12.626 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+	O18:02:12.626 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP2Field
+	N18:02:12.627 [Test worker] INFO  EdgeConnectorTest - testGetIsEP2Field passed
 
-R20:56:38.335 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+R18:02:12.627 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
 
-^20:56:38.335 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+^18:02:12.627 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
 
-[20:56:38.336 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
+O18:02:12.627 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP2Table
 
-•20:56:38.336 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-
-c20:56:38.336 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@7e3181aa
-
-O20:56:38.336 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP2Table
-
-N20:56:38.336 [Test worker] INFO  EdgeConnectorTest - testGetIsEP2Table passed
-R20:56:38.336 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.336 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.336 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.336 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.337 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@253d9f73
-O20:56:38.337 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP1Field
-N20:56:38.337 [Test worker] DEBUG EdgeConnector - Setting isEP1Field to: false
-N20:56:38.337 [Test worker] INFO  EdgeConnectorTest - testSetIsEP1Field passed
-R20:56:38.337 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.337 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.337 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.337 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.337 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@142269f2
-O20:56:38.337 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP1Table
-N20:56:38.338 [Test worker] DEBUG EdgeConnector - Setting isEP1Table to: false
-N20:56:38.338 [Test worker] INFO  EdgeConnectorTest - testSetIsEP1Table passed
-R20:56:38.338 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.338 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.338 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.338 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.338 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@331acdad
-O20:56:38.338 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP2Field
-N20:56:38.338 [Test worker] DEBUG EdgeConnector - Setting isEP2Field to: false
-N20:56:38.338 [Test worker] INFO  EdgeConnectorTest - testSetIsEP2Field passed
-R20:56:38.338 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^20:56:38.339 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-[20:56:38.339 [Test worker] DEBUG EdgeConnector - Input string: 1|2|3|testStyle1|testStyle2
-•20:56:38.339 [Test worker] DEBUG EdgeConnector - Parsed values: numConnector=1, endPoint1=2, endPoint2=3, endStyle1=testStyle1, endStyle2=testStyle2
-c20:56:38.339 [Test worker] DEBUG EdgeConnectorTest - Created EdgeConnector: EdgeConnector@41d426b5
-O20:56:38.339 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP2Table
-N20:56:38.339 [Test worker] DEBUG EdgeConnector - Setting isEP2Table to: false
-N20:56:38.339 [Test worker] INFO  EdgeConnectorTest - testSetIsEP2Table passed
+N18:02:12.627 [Test worker] INFO  EdgeConnectorTest - testGetIsEP2Table passed
+R18:02:12.627 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.627 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+O18:02:12.628 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP1Field
+N18:02:12.628 [Test worker] INFO  EdgeConnectorTest - testSetIsEP1Field passed
+R18:02:12.628 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.628 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+O18:02:12.628 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP1Table
+N18:02:12.629 [Test worker] INFO  EdgeConnectorTest - testSetIsEP1Table passed
+R18:02:12.629 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.629 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+O18:02:12.629 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP2Field
+N18:02:12.629 [Test worker] INFO  EdgeConnectorTest - testSetIsEP2Field passed
+R18:02:12.629 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+^18:02:12.629 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+O18:02:12.630 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP2Table
+N18:02:12.630 [Test worker] INFO  EdgeConnectorTest - testSetIsEP2Table passed

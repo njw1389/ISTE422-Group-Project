@@ -1177,7 +1177,7 @@ public class EdgeConvertGUI {
             //close the file
             pw.close();
          } catch (IOException ioe) {
-            System.out.println(ioe);
+            logger.error("Error writing SQL to file", ioe);
          }
       }
    }
