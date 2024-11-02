@@ -24,7 +24,7 @@ public class EdgeFieldTest {
         EdgeField ef;
         for (String str : inputStrings) {
             ef = new EdgeField(str);
-            StringTokenizer sTokenizer = new StringTokenizer(str, '|');
+            StringTokenizer sTokenizer = new StringTokenizer(str, "|");
             assertEquals("EdgeField numFigure is equal to string token value.", ef.getNumFigure(), sTokenizer.nextToken());
             assertEquals("EdgeField name is equal to string token value.", ef.getName(), sTokenizer.nextToken());
         }
