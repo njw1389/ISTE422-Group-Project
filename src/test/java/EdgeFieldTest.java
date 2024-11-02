@@ -19,7 +19,7 @@ public class EdgeFieldTest {
     }
 
     @Test 
-    void testConstructor() {
+    void testConstructor() throws IOException{
         String[] inputStrings = loadTestData();
         EdgeField ef;
         for (String str : inputStrings) {
