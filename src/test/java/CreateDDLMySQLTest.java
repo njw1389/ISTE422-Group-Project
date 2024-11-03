@@ -10,6 +10,7 @@ public class CreateDDLMySQLTest{
     private EdgeTable edgetbl2;
     private EdgeField edgeflds[]= new EdgeField[2];
     private EdgeTable edgetbls[] = new EdgeTable[2];
+    CreateDDLMySQL tester;
 
     @Before
     void setUp(){
@@ -26,7 +27,7 @@ public class CreateDDLMySQLTest{
     }
     @Test
     public void testConstructor(){
-        CreateDDLMySQL tester = CreateDDLMySQL(edgeflds, edgetbls);
+        tester = new CreateDDLMySQL(edgetbls,edgeflds);
         assertNotNull("Tester should be initialized", tester);
 
     }
