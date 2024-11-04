@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class EdgeFieldTest {
-    private String TEST_DATA_PATH = "../resources/EdgeFieldTestData.psv";
+    private String TEST_DATA_PATH = "src/test/resources/EdgeFieldTestData.psv";
     private EdgeField getterSetterTester;
 
     @Before
@@ -25,7 +25,7 @@ public class EdgeFieldTest {
         for (String str : inputStrings) {
             ef = new EdgeField(str);
             StringTokenizer sTokenizer = new StringTokenizer(str, "|");
-            assertEquals("EdgeField numFigure is equal to string token value.", ef.getNumFigure(), sTokenizer.nextToken());
+            assertEquals("EdgeField numFigure is equal to string token value.", ef.getNumFigure(), Integer.parseInt(sTokenizer.nextToken()));
             assertEquals("EdgeField name is equal to string token value.", ef.getName(), sTokenizer.nextToken());
         }
     }
@@ -166,6 +166,6 @@ public class EdgeFieldTest {
         }
 
         br.close();
-        return (String[])ls.toArray();
+        return ls.toArray(new String[0]);
     }
 }
