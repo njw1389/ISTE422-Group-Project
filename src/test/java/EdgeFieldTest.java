@@ -14,12 +14,12 @@ public class EdgeFieldTest {
     private EdgeField getterSetterTester;
 
     @Before
-    void setUp() {
+    public void setUp() {
         getterSetterTester = new EdgeField("30|testField");
     }
 
     @Test 
-    void testConstructor() throws IOException{
+    public void testConstructor() throws IOException{
         String[] inputStrings = loadTestData();
         EdgeField ef;
         for (String str : inputStrings) {
@@ -31,88 +31,88 @@ public class EdgeFieldTest {
     }
 
     @Test
-    void testGetNumFigure() {
+    public void testGetNumFigure() {
         assertEquals("Testing getNumFigure.", getterSetterTester.getNumFigure(), 30);
     }
 
     @Test
-    void testGetName() {
+    public void testGetName() {
         assertEquals("Testing getName.", getterSetterTester.getName(), "testField");
     }
 
     @Test
-    void testGetTableID() {
+    public void testGetTableID() {
         assertEquals("Table ID should be equal to zero on initialization.", getterSetterTester.getTableID(), 0);
     }
 
     @Test
-    void testSetTableID() {
+    public void testSetTableID() {
         getterSetterTester.setTableID(300);
         assertEquals("Table ID should be equal to the set value.", getterSetterTester.getTableID(), 300);
     }
 
     @Test
-    void testGetTableBound() {
+    public void testGetTableBound() {
         assertEquals("Table Bound should be equal to zero on initialization.", getterSetterTester.getTableBound(), 0);
     }
 
     @Test
-    void testSetTableBound() {
+    public void testSetTableBound() {
         getterSetterTester.setTableBound(300);
         assertEquals("Table Bound should be equal to the set value.", getterSetterTester.getTableBound(), 300);
     }
 
     @Test
-    void testGetFieldBound() {
+    public void testGetFieldBound() {
         assertEquals("Field Bound should be equal to zero on initialization.", getterSetterTester.getFieldBound(), 0);
     }
 
     @Test
-    void testSetFieldBound() {
+    public void testSetFieldBound() {
         getterSetterTester.setFieldBound(300);
         assertEquals("Field Bound should be equal to the set value.", getterSetterTester.getFieldBound(), 300);
     }
 
     @Test
-    void testGetDisallowNull() {
+    public void testGetDisallowNull() {
         assertEquals("Disallow Null should be equal to false on initialization.", getterSetterTester.getDisallowNull(), false);
     }
 
     @Test
-    void testSetDisallowNull() {
+    public void testSetDisallowNull() {
         getterSetterTester.setDisallowNull(true);
         assertEquals("Disallow Null should be equal to the set value.", getterSetterTester.getDisallowNull(), true);
     }
 
     @Test
-    void testGetIsPrimaryKey() {
+    public void testGetIsPrimaryKey() {
         assertEquals("Primary Key should be equal to false on initialization.", getterSetterTester.getIsPrimaryKey(), false);
     }
 
     @Test
-    void testSetIsPrimaryKey() {
+    public void testSetIsPrimaryKey() {
         getterSetterTester.setIsPrimaryKey(true);
         assertEquals("Primary Key should be equal to the set value.", getterSetterTester.getIsPrimaryKey(), true);
     }
 
     @Test
-    void testGetDefaultValue() {
+    public void testGetDefaultValue() {
         assertEquals("Default value should be equal to empty string on initialization.", getterSetterTester.getDefaultValue(), "");
     }
 
     @Test
-    void testSetDefaultValue() {
+    public void testSetDefaultValue() {
         getterSetterTester.setDefaultValue("test");
         assertEquals("Default value should be equal to the set value.", getterSetterTester.getDefaultValue(), "test");
     }
 
     @Test
-    void testGetVarcharValue() {
+    public void testGetVarcharValue() {
         assertEquals("Varchar value should be equal to 1 on initialization.", getterSetterTester.getVarcharValue(), 1);
     }
 
     @Test
-    void testSetVarcharValue() {
+    public void testSetVarcharValue() {
         getterSetterTester.setVarcharValue(5);
         assertEquals("Varchar value should be equal to the set value.", getterSetterTester.getVarcharValue(), 5);
         getterSetterTester.setVarcharValue(-5);
@@ -120,12 +120,12 @@ public class EdgeFieldTest {
     }
 
     @Test
-    void testGetDataType() {
+    public void testGetDataType() {
         assertEquals("Data type should be equal to 0 on initialization.", getterSetterTester.getDataType(), 0);
     }
 
     @Test
-    void testSetDataType() {
+    public void testSetDataType() {
         getterSetterTester.setDataType(3);
         assertEquals("Data type should be equal to the set value.", getterSetterTester.getDataType(), 3);
         getterSetterTester.setDataType(-3);
@@ -135,13 +135,13 @@ public class EdgeFieldTest {
     }
 
     @Test
-    void testGetStrDataType() {
+    public void testGetStrDataType() {
         String[] dataTypeArrayReplica = {"Varchar", "Boolean", "Integer", "Double"};
         assertEquals("Data type array equals the replica.", EdgeField.getStrDataType(), dataTypeArrayReplica);
     }
 
     @Test
-    void testToString() {
+    public void testToString() {
         String toStringReplica = getterSetterTester.getNumFigure() + EdgeConvertFileParser.DELIM +
         getterSetterTester.getName() + EdgeConvertFileParser.DELIM +
         getterSetterTester.getTableID() + EdgeConvertFileParser.DELIM +
