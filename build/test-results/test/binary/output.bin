@@ -1,56 +1,183 @@
-R18:02:12.611 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.613 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-N18:02:12.619 [Test worker] INFO  EdgeConnectorTest - Running testGetEndPoint1
-M18:02:12.620 [Test worker] INFO  EdgeConnectorTest - testGetEndPoint1 passed
-R18:02:12.621 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.621 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-N18:02:12.621 [Test worker] INFO  EdgeConnectorTest - Running testGetEndPoint2
-M18:02:12.621 [Test worker] INFO  EdgeConnectorTest - testGetEndPoint2 passed
-R18:02:12.621 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.621 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-N18:02:12.622 [Test worker] INFO  EdgeConnectorTest - Running testGetEndStyle1
-M18:02:12.622 [Test worker] INFO  EdgeConnectorTest - testGetEndStyle1 passed
-R18:02:12.622 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.622 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-N18:02:12.622 [Test worker] INFO  EdgeConnectorTest - Running testGetEndStyle2
-M18:02:12.622 [Test worker] INFO  EdgeConnectorTest - testGetEndStyle2 passed
-R18:02:12.623 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.623 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-Q18:02:12.623 [Test worker] INFO  EdgeConnectorTest - Running testGetNumConnector
-P18:02:12.625 [Test worker] INFO  EdgeConnectorTest - testGetNumConnector passed
-R18:02:12.625 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.625 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-O18:02:12.625 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP1Field
-N18:02:12.625 [Test worker] INFO  EdgeConnectorTest - testGetIsEP1Field passed
-R18:02:12.625 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.625 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-O18:02:12.626 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP1Table
-N18:02:12.626 [Test worker] INFO  EdgeConnectorTest - testGetIsEP1Table passed
-	R18:02:12.626 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-	^18:02:12.626 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-	O18:02:12.626 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP2Field
-	N18:02:12.627 [Test worker] INFO  EdgeConnectorTest - testGetIsEP2Field passed
+V15:06:45.123 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.132 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:45.132 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:45.132 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.132 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:45.133 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:45.133 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:45.133 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:45.133 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:45.134 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:45.134 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:45.134 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+V15:06:45.134 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:45.135 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+V15:06:45.135 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:45.135 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:45.135 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:45.135 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:45.135 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+Z15:06:45.135 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+V15:06:45.137 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.137 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:45.137 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:45.137 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.138 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:45.138 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:45.138 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:45.138 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:45.138 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:45.138 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:45.138 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:45.139 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+V15:06:45.139 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.139 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:45.139 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:45.139 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.139 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:45.139 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:45.140 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:45.140 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:45.140 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:45.140 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:45.140 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:45.140 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+Z15:06:45.140 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+V15:06:45.141 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.141 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:45.141 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:45.141 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.141 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:45.141 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:45.141 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:45.142 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:45.142 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:45.142 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:45.142 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:45.142 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+m15:06:45.142 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:45.142 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:45.143 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+V15:06:45.143 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.143 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:45.143 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:45.143 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.143 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:45.143 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:45.143 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:45.144 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:45.144 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:45.144 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:45.144 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:45.144 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+V15:06:45.144 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.144 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:45.144 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:45.145 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.145 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:45.145 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:45.145 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:45.145 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:45.145 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:45.145 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:45.145 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:45.145 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+]15:06:45.146 [Test worker] WARN  EdgeConvertCreateDDL - No field found for figure number: 99
+V15:06:45.146 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.146 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:45.146 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:45.146 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:45.146 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:45.146 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:45.146 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:45.146 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:45.146 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:45.147 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:45.147 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:45.147 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+I15:06:45.147 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+K15:06:45.150 [Test worker] INFO  CreateDDLMySQL - Generating database name
+J15:06:47.705 [Test worker] INFO  CreateDDLMySQL - Database name set to: t
+I15:06:47.708 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+	V15:06:47.709 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+	J15:06:47.709 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+	F15:06:47.709 [Test worker] INFO  EdgeField - varcharValue set to: 255
+	V15:06:47.709 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+	J15:06:47.710 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+	V15:06:47.710 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+	V15:06:47.710 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+	M15:06:47.710 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+	M15:06:47.711 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+	m15:06:47.711 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+	Z15:06:47.711 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+	o15:06:47.711 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
 
-R18:02:12.627 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+V15:06:47.712 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
 
-^18:02:12.627 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+J15:06:47.712 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
 
-O18:02:12.627 [Test worker] INFO  EdgeConnectorTest - Running testGetIsEP2Table
+F15:06:47.712 [Test worker] INFO  EdgeField - varcharValue set to: 255
 
-N18:02:12.627 [Test worker] INFO  EdgeConnectorTest - testGetIsEP2Table passed
-R18:02:12.627 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.627 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-O18:02:12.628 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP1Field
-N18:02:12.628 [Test worker] INFO  EdgeConnectorTest - testSetIsEP1Field passed
-R18:02:12.628 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.628 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-O18:02:12.628 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP1Table
-N18:02:12.629 [Test worker] INFO  EdgeConnectorTest - testSetIsEP1Table passed
-R18:02:12.629 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.629 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-O18:02:12.629 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP2Field
-N18:02:12.629 [Test worker] INFO  EdgeConnectorTest - testSetIsEP2Field passed
-R18:02:12.629 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
-^18:02:12.629 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
-O18:02:12.630 [Test worker] INFO  EdgeConnectorTest - Running testSetIsEP2Table
-N18:02:12.630 [Test worker] INFO  EdgeConnectorTest - testSetIsEP2Table passed
+V15:06:47.712 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+
+J15:06:47.712 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+
+V15:06:47.712 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+
+V15:06:47.712 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+
+M15:06:47.713 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+
+M15:06:47.713 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+
+m15:06:47.713 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+
+Z15:06:47.713 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+
+o15:06:47.713 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+V15:06:47.714 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:47.714 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:47.714 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:47.714 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:47.715 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:47.715 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:47.715 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:47.715 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:47.715 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:47.715 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:47.715 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:47.716 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+I15:06:47.716 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+K15:06:47.716 [Test worker] INFO  CreateDDLMySQL - Generating database name
+P15:06:48.154 [Test worker] INFO  CreateDDLMySQL - Database name set to: MySQLDB
+I15:06:48.155 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+I15:06:48.157 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+K15:06:48.158 [Test worker] INFO  CreateDDLMySQL - Generating database name
+P15:06:48.569 [Test worker] INFO  CreateDDLMySQL - Database name set to: MySQLDB
+I15:06:48.571 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+V15:06:48.572 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:48.573 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:48.573 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:48.573 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:48.573 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:48.573 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:48.573 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:48.574 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:48.574 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:48.575 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:48.575 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:48.575 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+]15:06:48.576 [Test worker] WARN  EdgeConvertCreateDDL - No table found for figure number: 99
+V15:06:48.576 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:48.577 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+F15:06:48.577 [Test worker] INFO  EdgeField - varcharValue set to: 255
+V15:06:48.577 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J15:06:48.577 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+V15:06:48.578 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+V15:06:48.578 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+M15:06:48.578 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+M15:06:48.578 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+m15:06:48.579 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+Z15:06:48.579 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+o15:06:48.579 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 2 tables and 2 fields
+o15:06:48.579 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with default constructor
