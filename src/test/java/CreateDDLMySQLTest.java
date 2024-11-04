@@ -13,7 +13,7 @@ public class CreateDDLMySQLTest{
     CreateDDLMySQL tester;
 
     @Before
-    void setUp(){
+    public void setUp(){
         edgefld1 = new EdgeField("30|testField1");
         edgefld2 = new EdgeField("28|testField2");
         edgeflds[0] = edgefld1;
@@ -29,6 +29,50 @@ public class CreateDDLMySQLTest{
     public void testConstructor(){
         tester = new CreateDDLMySQL(edgetbls,edgeflds);
         assertNotNull("Tester should be initialized", tester);
+    }
+    @Test
+    public void convertBooleanFalse(){
+        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+
+        String test = "false";
+        assertEquals("Should be zero", 0, tester.convertStrBooleanToInt(test));
 
     }
+    @Test
+    public void convertBooleanTrue(){
+        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+        String test = "true";
+        assertEquals("Should be one", 1, tester.convertStrBooleanToInt(test));
+    }
+    @Test
+    public void convertBooleanInvalid(){
+        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+        String test = "fghkf";
+        assertEquals("Should be false", 0, tester.convertStrBooleanToInt(test));
+    }
+    @Test
+    public void generateDBNameValid(){
+        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+        //how to set db name??
+        assertEquals("Should be testDB", tester.getDatabaseName(), tester.generateDatabaseName());
+    }
+    @Test
+    public void getDBNameValid(){
+        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+        //how to set db name??
+        assertEquals("Should be testDB", "testDB", tester.getDatabaseName());
+    }
+    @Test
+    public void getDBNameInvalid(){
+        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+        //how to set db name??
+        assertNotEquals("Should be different names", "randomstr", tester.getDatabaseName());
+    }
+    @Test
+    public void getProductNameTest(){
+        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+        //how to set db name??
+        assertEquals("Should be MySQL", "MySQL", tester.getProductName());
+    }
+   
 }
