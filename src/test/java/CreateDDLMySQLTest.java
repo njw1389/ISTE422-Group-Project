@@ -20,9 +20,11 @@ public class CreateDDLMySQLTest{
         edgeflds[1] = edgefld2;
 
         edgetbl1 = new EdgeTable("22|testTable1");
-        edgetbl1.setRelatedField(1,1);
         edgetbl2 = new EdgeTable("25|testTable2");
+        edgetbl1.setRelatedField(0,1);
         edgetbl2.setRelatedField(1,1);
+        edgetbl1.makeArrays();
+        edgetbl2.makeArrays();
         edgetbls[0] = edgetbl1;
         edgetbls[1] = edgetbl2;
         
