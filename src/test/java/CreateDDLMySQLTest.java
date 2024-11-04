@@ -8,12 +8,13 @@ public class CreateDDLMySQLTest{
     private EdgeField edgefld2;
     private EdgeTable edgetbl1;
     private EdgeTable edgetbl2;
-    private EdgeField edgeflds[]= new EdgeField[2];
-    private EdgeTable edgetbls[] = new EdgeTable[2];
-    CreateDDLMySQL tester;
+    private EdgeField[] edgeFields;
+    private EdgeTable[] edgeTables;
+    private CreateDDLMySQL tester;
 
     @Before
     public void setUp(){
+        /*
         edgefld1 = new EdgeField("30|testField1");
         edgefld2 = new EdgeField("28|testField2");
         edgeflds[0] = edgefld1;
@@ -26,17 +27,40 @@ public class CreateDDLMySQLTest{
         edgetbl1.makeArrays();
         edgetbl2.makeArrays();
         edgetbls[0] = edgetbl1;
-        edgetbls[1] = edgetbl2;
+        edgetbls[1] = edgetbl2; */
+        edgefld1 = new EdgeField("30|testField1");
+        edgefld1.setDataType(0); 
+        edgefld1.setVarcharValue(255);
+        edgefld1.setIsPrimaryKey(true); 
+
+        edgefld2 = new EdgeField("28|testField2");
+        edgefld2.setDataType(2);
+        edgeFields = new EdgeField[] { edgefld1, edgefld2 };
+
+        edgetbl1 = new EdgeTable("22|testTable1");
+        edgetbl2 = new EdgeTable("25|testTable2");
+
+        edgetbl1.addNativeField(30);
+        edgetbl1.makeArrays();
+        edgetbl2.addNativeField(28); 
+        edgetbl2.makeArrays();
+
+        edgetbl1.setRelatedField(0, 28); 
+        edgetbl2.setRelatedField(0, 30);
+        edgeTables = new EdgeTable[] { edgetbl1, edgetbl2 };
+        tester = new CreateDDLMySQL(edgeTables, edgeFields);
+
+        tester.databaseName = "MySQLDB";  
         
     }
     @Test
     public void testConstructor(){
-        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+       
         assertNotNull("Tester should be initialized", tester);
     }
     @Test
     public void convertBooleanFalse(){
-        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+       
 
         String test = "false";
         assertEquals("Should be zero", 0, tester.convertStrBooleanToInt(test));
@@ -44,37 +68,37 @@ public class CreateDDLMySQLTest{
     }
     @Test
     public void convertBooleanTrue(){
-        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+       
         String test = "true";
         assertEquals("Should be one", 1, tester.convertStrBooleanToInt(test));
     }
     @Test
     public void convertBooleanInvalid(){
-        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+       
         String test = "fghkf";
         assertEquals("Should be false", 0, tester.convertStrBooleanToInt(test));
     }
     @Test
     public void generateDBNameValid(){
-        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+       
         //how to set db name??
-        assertEquals("Should be testDB", tester.getDatabaseName(), tester.generateDatabaseName());
+        assertEquals("Should be MySQLDB", tester.getDatabaseName(), tester.generateDatabaseName());
     }
     @Test
     public void getDBNameValid(){
-        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+       
         //how to set db name??
-        assertEquals("Should be testDB", "testDB", tester.getDatabaseName());
+        assertEquals("Should be MySQLDB", "MySQLDB", tester.getDatabaseName());
     }
     @Test
     public void getDBNameInvalid(){
-        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+       
         //how to set db name??
         assertNotEquals("Should be different names", "randomstr", tester.getDatabaseName());
     }
     @Test
     public void getProductNameTest(){
-        tester = new CreateDDLMySQL(edgetbls,edgeflds);
+       
         //how to set db name??
         assertEquals("Should be MySQL", "MySQL", tester.getProductName());
     }
