@@ -31,6 +31,7 @@ public class EdgeTable {
       return name;
    }
    
+   @SuppressWarnings("removal")
    public void addRelatedTable(int relatedTable) {
       logger.debug("Adding related table: {}", relatedTable);
       alRelatedTables.add(new Integer(relatedTable));
@@ -56,6 +57,7 @@ public class EdgeTable {
       return nativeFields;
    }
 
+   @SuppressWarnings("removal")
    public void addNativeField(int value) {
       logger.debug("Adding native field: {}", value);
       alNativeFields.add(new Integer(value));
