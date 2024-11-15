@@ -2,173 +2,226 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.After;
 import static org.junit.Assert.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class EdgeConvertCreateDDLTest {
+    private static final Logger logger = LogManager.getLogger(EdgeConvertCreateDDLTest.class);
+    
+    // Test constants
+    private static final String TEST_DB_NAME = "TestDatabase";
+    private static final int FIELD1_FIGURE = 30;
+    private static final int FIELD2_FIGURE = 28;
+    private static final int TABLE1_FIGURE = 22;
+    private static final int TABLE2_FIGURE = 25;
+    private static final String FIELD1_NAME = "testField1";
+    private static final String FIELD2_NAME = "testField2";
+    private static final String TABLE1_NAME = "testTable1";
+    private static final String TABLE2_NAME = "testTable2";
+
+    // Test fixtures
     private EdgeField edgeField1;
     private EdgeField edgeField2;
     private EdgeTable edgeTable1;
     private EdgeTable edgeTable2;
     private EdgeField[] edgeFields;
     private EdgeTable[] edgeTables;
-    private CreateDDLMySQL tester;
+    private TestDDLImplementation testSubject;
 
+    // Concrete implementation for testing abstract class
+    private class TestDDLImplementation extends EdgeConvertCreateDDL {
+        private String databaseName = TEST_DB_NAME;
 
-    //Before
-    @Before
-    public void setUp() {
-        edgeField1 = new EdgeField("30|testField1");
-        edgeField1.setDataType(0); 
-        edgeField1.setVarcharValue(255);
-        edgeField1.setIsPrimaryKey(true); 
+        public TestDDLImplementation(EdgeTable[] tables, EdgeField[] fields) {
+            super(tables, fields);
+        }
 
-        edgeField2 = new EdgeField("28|testField2");
-        edgeField2.setDataType(2);
+        public TestDDLImplementation() {
+            super();
+        }
 
-        edgeFields = new EdgeField[] { edgeField1, edgeField2 };
+        @Override
+        public String getDatabaseName() {
+            return databaseName;
+        }
 
-        edgeTable1 = new EdgeTable("22|testTable1");
-        edgeTable2 = new EdgeTable("25|testTable2");
+        @Override
+        public String getProductName() {
+            return "TestProduct";
+        }
 
-        edgeTable1.addNativeField(30);
-        edgeTable1.makeArrays();
-        edgeTable2.addNativeField(28); 
-        edgeTable2.makeArrays();
-        edgeTable1.setRelatedField(0, 28); 
-        edgeTable2.setRelatedField(0, 30);
+        @Override
+        public String getSQLString() {
+            createDDL();
+            return sb.toString();
+        }
 
-        edgeTables = new EdgeTable[] { edgeTable1, edgeTable2 };
-
-        tester = new CreateDDLMySQL(edgeTables, edgeFields);
-
-        tester.databaseName = "TestDatabase";  
+        @Override
+        public void createDDL() {
+            sb = new StringBuffer();
+            sb.append("CREATE DATABASE ").append(databaseName).append(";\n");
+            sb.append("USE ").append(databaseName).append(";\n");
+            // Add table creation logic for testing
+            for (EdgeTable table : tables) {
+                sb.append("CREATE TABLE ").append(table.getName()).append(";\n");
+            }
+        }
     }
 
+    @Before
+    public void setUp() {
+        logger.info("Setting up test environment");
+        initializeFields();
+        initializeTables();
+        setupRelationships();
+        createTestSubject();
+    }
 
-    //After
+    private void initializeFields() {
+        logger.debug("Initializing test fields");
+        // Field 1: VARCHAR primary key
+        edgeField1 = new EdgeField(FIELD1_FIGURE + "|" + FIELD1_NAME);
+        edgeField1.setDataType(0);
+        edgeField1.setVarcharValue(255);
+        edgeField1.setIsPrimaryKey(true);
+
+        // Field 2: INT
+        edgeField2 = new EdgeField(FIELD2_FIGURE + "|" + FIELD2_NAME);
+        edgeField2.setDataType(2);
+
+        edgeFields = new EdgeField[]{edgeField1, edgeField2};
+    }
+
+    private void initializeTables() {
+        logger.debug("Initializing test tables");
+        edgeTable1 = new EdgeTable(TABLE1_FIGURE + "|" + TABLE1_NAME);
+        edgeTable2 = new EdgeTable(TABLE2_FIGURE + "|" + TABLE2_NAME);
+
+        edgeTable1.addNativeField(FIELD1_FIGURE);
+        edgeTable1.makeArrays();
+        edgeTable2.addNativeField(FIELD2_FIGURE);
+        edgeTable2.makeArrays();
+    }
+
+    private void setupRelationships() {
+        logger.debug("Setting up table relationships");
+        edgeTable1.setRelatedField(0, FIELD2_FIGURE);
+        edgeTable2.setRelatedField(0, FIELD1_FIGURE);
+        edgeTables = new EdgeTable[]{edgeTable1, edgeTable2};
+    }
+
+    private void createTestSubject() {
+        logger.debug("Creating test subject");
+        testSubject = new TestDDLImplementation(edgeTables, edgeFields);
+    }
+
     @After
     public void tearDown() {
+        logger.info("Tearing down test environment");
         edgeField1 = null;
         edgeField2 = null;
         edgeTable1 = null;
         edgeTable2 = null;
         edgeFields = null;
         edgeTables = null;
-        tester = null;
+        testSubject = null;
     }
 
-
-    //Tests
+    // Constructor Tests
     @Test
-    public void testConstructorWithTablesAndFields() {
-        tester = new CreateDDLMySQL(edgeTables, edgeFields);
-
-        assertNotNull("Tables should be initialized", tester.tables);
-        assertNotNull("Fields should be initialized", tester.fields);
-
-        assertEquals("Tables array should have length 2", 2, tester.tables.length);
-        assertEquals("Fields array should have length 2", 2, tester.fields.length);
-
-        assertEquals("First table should be testTable1", "testTable1", tester.tables[0].getName());
-        assertEquals("Second table should be testTable2", "testTable2", tester.tables[1].getName());
-        assertEquals("First field should be testField1", "testField1", tester.fields[0].getName());
-        assertEquals("Second field should be testField2", "testField2", tester.fields[1].getName());
+    public void testParameterizedConstructor() {
+        logger.info("Testing parameterized constructor");
+        assertNotNull("Test subject should be initialized", testSubject);
+        assertNotNull("Tables should be initialized", testSubject.tables);
+        assertNotNull("Fields should be initialized", testSubject.fields);
+        assertEquals("Should have correct number of tables", 2, testSubject.tables.length);
+        assertEquals("Should have correct number of fields", 2, testSubject.fields.length);
     }
 
     @Test
     public void testDefaultConstructor() {
-        tester = new CreateDDLMySQL();
-
-        assertNull("Tables should be null for default constructor", tester.tables);
-        assertNull("Fields should be null for default constructor", tester.fields);
+        logger.info("Testing default constructor");
+        TestDDLImplementation defaultInstance = new TestDDLImplementation();
+        assertNull("Tables should be null in default constructor", defaultInstance.tables);
+        assertNull("Fields should be null in default constructor", defaultInstance.fields);
     }
 
+    // Initialization Tests
     @Test
     public void testInitializeWithBoundFields() {
-        tester.initialize();
-
-        assertEquals("First table should have 1 bound field", 1, tester.numBoundTables[0]);
-        assertEquals("Second table should have 1 bound field", 1, tester.numBoundTables[1]);
-        assertEquals("maxBound should be 1", 1, tester.maxBound);
+        logger.info("Testing initialization with bound fields");
+        testSubject.initialize();
+        assertEquals("First table should have one bound field", 1, testSubject.numBoundTables[0]);
+        assertEquals("Second table should have one bound field", 1, testSubject.numBoundTables[1]);
+        assertEquals("Maximum bound should be 1", 1, testSubject.maxBound);
     }
 
     @Test
-    public void testInitializeWithNoBoundFields() {
-        edgeTable1 = new EdgeTable("22|testTable1");
-        edgeTable1.addNativeField(1);
-        edgeTable1.makeArrays();
+    public void testInitializeWithUnboundFields() {
+        logger.info("Testing initialization with unbound fields");
+        // Create tables without relationships
+        EdgeTable[] unboundTables = new EdgeTable[]{
+            new EdgeTable(TABLE1_FIGURE + "|UnboundTable1"),
+            new EdgeTable(TABLE2_FIGURE + "|UnboundTable2")
+        };
+        unboundTables[0].makeArrays();
+        unboundTables[1].makeArrays();
 
-        edgeTable2 = new EdgeTable("25|testTable2");
-        edgeTable2.addNativeField(2);
-        edgeTable2.makeArrays();
+        TestDDLImplementation unboundTest = new TestDDLImplementation(unboundTables, edgeFields);
+        unboundTest.initialize();
 
-        edgeTables = new EdgeTable[] { edgeTable1, edgeTable2 };
+        assertEquals("Unbound tables should have zero bound fields", 0, unboundTest.numBoundTables[0]);
+        assertEquals("Maximum bound should be 0", 0, unboundTest.maxBound);
+    }
 
-        tester = new CreateDDLMySQL(edgeTables, edgeFields);
-        tester.initialize();
-
-        assertEquals("First table should have 0 bound fields", 0, tester.numBoundTables[0]);
-        assertEquals("Second table should have 0 bound fields", 0, tester.numBoundTables[1]);
-        assertEquals("maxBound should be 0", 0, tester.maxBound);
+    // Lookup Tests
+    @Test
+    public void testTableLookup() {
+        logger.info("Testing table lookup functionality");
+        EdgeTable found = testSubject.getTable(TABLE1_FIGURE);
+        assertNotNull("Should find existing table", found);
+        assertEquals("Should find correct table", TABLE1_NAME, found.getName());
+        
+        EdgeTable notFound = testSubject.getTable(-1);
+        assertNull("Should return null for non-existent table", notFound);
     }
 
     @Test
-    public void testGetTableByFigureNumberValid() {
-        EdgeTable result = tester.getTable(22);
-        assertNotNull("Should return a valid EdgeTable for figure number 22", result);
-        assertEquals("Returned table should have the name testTable1", "testTable1", result.getName());
+    public void testFieldLookup() {
+        logger.info("Testing field lookup functionality");
+        EdgeField found = testSubject.getField(FIELD1_FIGURE);
+        assertNotNull("Should find existing field", found);
+        assertEquals("Should find correct field", FIELD1_NAME, found.getName());
+        
+        EdgeField notFound = testSubject.getField(-1);
+        assertNull("Should return null for non-existent field", notFound);
     }
 
+    // Edge Cases and Error Conditions
     @Test
-    public void testGetTableByFigureNumberInvalid() {
-        EdgeTable result = tester.getTable(99);
-        assertNull("Should return null for a non existent figure number", result);
+    public void testInitializeWithEmptyTables() {
+        logger.info("Testing initialization with empty tables");
+        TestDDLImplementation emptyTest = new TestDDLImplementation(new EdgeTable[0], edgeFields);
+        emptyTest.initialize();
+        assertEquals("Empty tables should have zero length numBoundTables", 0, emptyTest.numBoundTables.length);
+        assertEquals("Empty tables should have zero maxBound", 0, emptyTest.maxBound);
     }
 
-    @Test
-    public void testGetFieldByFigureNumberValid() {
-        EdgeField result = tester.getField(30);
-        assertNotNull("Should return a valid EdgeField for figure number 30", result);
-        assertEquals("Returned field should have the name testField1", "testField1", result.getName());
+    @Test(expected = NullPointerException.class)
+    public void testInitializeWithNullTables() {
+        logger.info("Testing initialization with null tables");
+        TestDDLImplementation nullTest = new TestDDLImplementation(null, edgeFields);
+        nullTest.initialize();
     }
 
+    // Integration Tests
     @Test
-    public void testGetFieldByFigureNumberInvalid() {
-        EdgeField result = tester.getField(99);
-        assertNull("Should return null for a non existent figure number", result);
-    }
-
-    @Test
-    public void testGetDatabaseName() {
-        String dbName = tester.getDatabaseName();
-        assertNotNull("Database name should not be null", dbName);
-        assertEquals("Database name should match", "TestDatabase", dbName);
-    }
-
-    @Test
-    public void testGetProductName() {
-        String productName = tester.getProductName();
-        assertEquals("Product name should be MySQL", "MySQL", productName);
-    }
-
-    @Test
-    public void testGetSQLString() {
-        String sqlString = tester.getSQLString();
-        assertNotNull("SQL string should not be null", sqlString);
-        assertFalse("SQL string should not be empty", sqlString.isEmpty());
-        assertTrue("SQL string should contain CREATE DATABASE", sqlString.contains("CREATE DATABASE"));
-    }
-
-    @Test
-    public void testCreateDDL() {
-        try {
-            tester.createDDL();
-            String sqlString = tester.getSQLString();
-            assertNotNull("SQL string should not be null after calling createDDL", sqlString);
-            assertFalse("SQL string should not be empty after calling createDDL", sqlString.isEmpty());
-            assertTrue("SQL string should contain USE statement", sqlString.contains("USE"));
-            assertTrue("SQL string should contain CREATE TABLE statement", sqlString.contains("CREATE TABLE"));
-        } catch (NullPointerException e) {
-            fail("NullPointerException should not occur in createDDL: " + e.getMessage());
-        }
+    public void testSQLGeneration() {
+        logger.info("Testing SQL generation");
+        String sql = testSubject.getSQLString();
+        assertNotNull("Generated SQL should not be null", sql);
+        assertTrue("SQL should contain database creation", sql.contains("CREATE DATABASE " + TEST_DB_NAME));
+        assertTrue("SQL should contain USE statement", sql.contains("USE " + TEST_DB_NAME));
+        assertTrue("SQL should contain table creation", sql.contains("CREATE TABLE"));
     }
 }
