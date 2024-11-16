@@ -73,7 +73,9 @@ public class CreateDDLMySQL extends EdgeConvertCreateDDL {
                   if (currentField.getFieldBound() != 0) {
                      numForeignKey++;
                   }
-                  sb.append(",\r\n");
+                  if(nativeFieldCount != nativeFields.length-1){
+                     sb.append(",\r\n");
+                  }
                }
                
                if (numPrimaryKey > 0) {
@@ -120,6 +122,8 @@ public class CreateDDLMySQL extends EdgeConvertCreateDDL {
             }
          }
       }
+      logger.info(sb);
+
       logger.info("DDL creation completed");
    }
 
