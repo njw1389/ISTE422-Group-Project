@@ -30,6 +30,20 @@ public abstract class EdgeConvertFileParser {
    public static final String SAVE_ID = "EdgeConvert Save File"; //first line of save files should be this
    public static final String DELIM = "|";
 
+   public EdgeConvertFileParser(File constructorFile) {
+      logger.info("Initializing EdgeConvertFileParser with file: {}", constructorFile.getName());
+      numFigure = 0;
+      numConnector = 0;
+      alTables = new ArrayList();
+      alFields = new ArrayList();
+      alConnectors = new ArrayList();
+      isEntity = false;
+      isAttribute = false;
+      parseFile = constructorFile;
+      numLine = 0;
+      this.openFile(parseFile);
+   }
+
    public abstract void parseFile() throws IOException;
    
    protected void resolveConnectors() { //Identify nature of Connector endpoints

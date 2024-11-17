@@ -11,17 +11,7 @@ import javax.swing.JOptionPane;
 public class ParseSaveFile extends EdgeConvertFileParser {
 
     public ParseSaveFile(File constructorFile) {
-      logger.info("Initializing EdgeConvertFileParser with file: {}", constructorFile.getName());
-      numFigure = 0;
-      numConnector = 0;
-      alTables = new ArrayList();
-      alFields = new ArrayList();
-      alConnectors = new ArrayList();
-      isEntity = false;
-      isAttribute = false;
-      parseFile = constructorFile;
-      numLine = 0;
-      this.openFile(parseFile);
+      super(constructorFile);
    }
 
     public void parseFile() throws IOException{
