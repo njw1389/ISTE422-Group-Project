@@ -1,0 +1,692 @@
+W14:51:46.792 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:46.805 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:51:46.805 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:51:46.805 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:46.806 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:51:46.806 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:46.806 [Test worker] INFO  EdgeField - dataType set to: 1 (Boolean)
+W14:51:46.806 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J14:51:46.807 [Test worker] INFO  EdgeField - dataType set to: 3 (Double)
+W14:51:46.807 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:51:46.807 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:51:46.807 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:51:46.807 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:51:46.807 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:51:46.807 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:51:46.809 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:51:46.809 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+p14:51:46.809 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 3 tables and 4 fields
+W14:51:46.809 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:46.810 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+W14:51:46.810 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:51:46.810 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:51:46.810 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:51:46.810 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+p14:51:46.810 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 1 tables and 1 fields
+J14:51:46.810 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+L14:51:46.815 [Test worker] INFO  CreateDDLMySQL - Generating database name
+Q14:51:57.101 [Test worker] INFO  CreateDDLMySQL - Database name set to: MySQLDB
+L14:51:57.102 [Test worker] INFO  CreateDDLMySQL - CREATE DATABASE MySQLDB;
+USE MySQLDB;
+CREATE TABLE testTable5 (
+	testField5 VARCHAR(1));
+
+
+J14:51:57.102 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+W14:51:57.104 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:57.104 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:51:57.105 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:51:57.105 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:57.105 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:51:57.105 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:57.105 [Test worker] INFO  EdgeField - dataType set to: 1 (Boolean)
+W14:51:57.105 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J14:51:57.105 [Test worker] INFO  EdgeField - dataType set to: 3 (Double)
+W14:51:57.106 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:51:57.106 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:51:57.106 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:51:57.106 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:51:57.106 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:51:57.106 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:51:57.106 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:51:57.106 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+p14:51:57.108 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 3 tables and 4 fields
+J14:51:57.108 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+L14:51:57.108 [Test worker] INFO  CreateDDLMySQL - Generating database name
+Q14:51:59.550 [Test worker] INFO  CreateDDLMySQL - Database name set to: MySQLDB
+L14:51:59.552 [Test worker] INFO  CreateDDLMySQL - CREATE DATABASE MySQLDB;
+USE MySQLDB;
+CREATE TABLE testTable1 (
+	testField1 VARCHAR(255),
+M	testField3 BOOL DEFAULT 1CONSTRAINT testTable1_PK PRIMARY KEY (testField1)
+);
+
+CREATE TABLE testTable2 (
+	testField2 INT,
+	testField4 DOUBLE NOT NULL);
+
+CREATE TABLE testTable3 (
+	testField3 BOOL DEFAULT 1);
+
+
+J14:51:59.552 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+W14:51:59.553 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:59.553 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:51:59.553 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:51:59.553 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:59.553 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:51:59.553 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:51:59.554 [Test worker] INFO  EdgeField - dataType set to: 1 (Boolean)
+W14:51:59.554 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J14:51:59.554 [Test worker] INFO  EdgeField - dataType set to: 3 (Double)
+W14:51:59.554 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:51:59.554 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:51:59.554 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:51:59.554 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:51:59.554 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:51:59.556 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:51:59.556 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:51:59.556 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+p14:51:59.556 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 3 tables and 4 fields
+J14:51:59.556 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+L14:51:59.557 [Test worker] INFO  CreateDDLMySQL - Generating database name
+Q14:52:00.641 [Test worker] INFO  CreateDDLMySQL - Database name set to: MySQLDB
+L14:52:00.642 [Test worker] INFO  CreateDDLMySQL - CREATE DATABASE MySQLDB;
+USE MySQLDB;
+CREATE TABLE testTable1 (
+	testField1 VARCHAR(255),
+M	testField3 BOOL DEFAULT 1CONSTRAINT testTable1_PK PRIMARY KEY (testField1)
+);
+
+CREATE TABLE testTable2 (
+	testField2 INT,
+	testField4 DOUBLE NOT NULL);
+
+CREATE TABLE testTable3 (
+	testField3 BOOL DEFAULT 1);
+
+
+J14:52:00.642 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+W14:52:00.642 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:00.643 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:00.643 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:00.643 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:00.643 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:00.643 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:00.643 [Test worker] INFO  EdgeField - dataType set to: 1 (Boolean)
+W14:52:00.643 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J14:52:00.643 [Test worker] INFO  EdgeField - dataType set to: 3 (Double)
+W14:52:00.644 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:00.644 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:00.644 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:00.644 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:00.644 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:00.644 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:00.644 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:00.644 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+p14:52:00.645 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 3 tables and 4 fields
+J14:52:00.645 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+L14:52:00.645 [Test worker] INFO  CreateDDLMySQL - Generating database name
+Q14:52:01.351 [Test worker] INFO  CreateDDLMySQL - Database name set to: MySQLDB
+L14:52:01.351 [Test worker] INFO  CreateDDLMySQL - CREATE DATABASE MySQLDB;
+USE MySQLDB;
+CREATE TABLE testTable1 (
+	testField1 VARCHAR(255),
+M	testField3 BOOL DEFAULT 1CONSTRAINT testTable1_PK PRIMARY KEY (testField1)
+);
+
+CREATE TABLE testTable2 (
+	testField2 INT,
+	testField4 DOUBLE NOT NULL);
+
+CREATE TABLE testTable3 (
+	testField3 BOOL DEFAULT 1);
+
+
+J14:52:01.352 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+W14:52:01.352 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:01.352 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:01.352 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:01.353 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:01.353 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:01.353 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:01.353 [Test worker] INFO  EdgeField - dataType set to: 1 (Boolean)
+W14:52:01.353 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J14:52:01.353 [Test worker] INFO  EdgeField - dataType set to: 3 (Double)
+W14:52:01.353 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:01.353 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:01.353 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:01.353 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:01.353 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:01.353 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:01.353 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:01.353 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+p14:52:01.354 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 3 tables and 4 fields
+J14:52:01.354 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+L14:52:01.354 [Test worker] INFO  CreateDDLMySQL - Generating database name
+Q14:52:01.834 [Test worker] INFO  CreateDDLMySQL - Database name set to: MySQLDB
+L14:52:01.834 [Test worker] INFO  CreateDDLMySQL - CREATE DATABASE MySQLDB;
+USE MySQLDB;
+CREATE TABLE testTable1 (
+	testField1 VARCHAR(255),
+M	testField3 BOOL DEFAULT 1CONSTRAINT testTable1_PK PRIMARY KEY (testField1)
+);
+
+CREATE TABLE testTable2 (
+	testField2 INT,
+	testField4 DOUBLE NOT NULL);
+
+CREATE TABLE testTable3 (
+	testField3 BOOL DEFAULT 1);
+
+
+J14:52:01.834 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+W14:52:01.835 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:01.835 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:01.835 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:01.835 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:01.835 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:01.835 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:01.835 [Test worker] INFO  EdgeField - dataType set to: 1 (Boolean)
+W14:52:01.835 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J14:52:01.835 [Test worker] INFO  EdgeField - dataType set to: 3 (Double)
+W14:52:01.835 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:01.835 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:01.835 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:01.835 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:01.835 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:01.835 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:01.835 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:01.835 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+p14:52:01.835 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 3 tables and 4 fields
+J14:52:01.835 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+L14:52:01.835 [Test worker] INFO  CreateDDLMySQL - Generating database name
+Q14:52:02.429 [Test worker] INFO  CreateDDLMySQL - Database name set to: MySQLDB
+L14:52:02.429 [Test worker] INFO  CreateDDLMySQL - CREATE DATABASE MySQLDB;
+USE MySQLDB;
+CREATE TABLE testTable1 (
+	testField1 VARCHAR(255),
+M	testField3 BOOL DEFAULT 1CONSTRAINT testTable1_PK PRIMARY KEY (testField1)
+);
+
+CREATE TABLE testTable2 (
+	testField2 INT,
+	testField4 DOUBLE NOT NULL);
+
+CREATE TABLE testTable3 (
+	testField3 BOOL DEFAULT 1);
+
+
+J14:52:02.429 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+W14:52:02.430 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:02.430 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:02.430 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:02.430 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:02.430 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:02.430 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:02.430 [Test worker] INFO  EdgeField - dataType set to: 1 (Boolean)
+W14:52:02.430 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+J14:52:02.430 [Test worker] INFO  EdgeField - dataType set to: 3 (Double)
+W14:52:02.430 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:02.430 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:02.430 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:02.430 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:02.430 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:02.431 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:02.431 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:02.431 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+p14:52:02.431 [Test worker] INFO  CreateDDLMySQL - CreateDDLMySQL constructor called with 3 tables and 4 fields
+J14:52:02.431 [Test worker] INFO  CreateDDLMySQL - Creating DDL for MySQL
+L14:52:02.431 [Test worker] INFO  CreateDDLMySQL - Generating database name
+Q14:52:03.065 [Test worker] INFO  CreateDDLMySQL - Database name set to: MySQLDB
+L14:52:03.065 [Test worker] INFO  CreateDDLMySQL - CREATE DATABASE MySQLDB;
+USE MySQLDB;
+CREATE TABLE testTable1 (
+	testField1 VARCHAR(255),
+M	testField3 BOOL DEFAULT 1CONSTRAINT testTable1_PK PRIMARY KEY (testField1)
+);
+
+CREATE TABLE testTable2 (
+	testField2 INT,
+	testField4 DOUBLE NOT NULL);
+
+CREATE TABLE testTable3 (
+	testField3 BOOL DEFAULT 1);
+
+
+J14:52:03.065 [Test worker] INFO  CreateDDLMySQL - DDL creation completed
+
+	S14:52:03.068 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+
+	_14:52:03.068 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+	O14:52:03.068 [Test worker] INFO  EdgeConnectorTest - Testing style properties
+
+S14:52:03.069 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+
+_14:52:03.069 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+Q14:52:03.069 [Test worker] INFO  EdgeConnectorTest - Testing numeric properties
+
+S14:52:03.069 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+
+_14:52:03.069 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+c14:52:03.069 [Test worker] INFO  EdgeConnectorTest - Testing constructor with insufficient tokens
+
+_14:52:03.069 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+S14:52:03.069 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+
+_14:52:03.069 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+H14:52:03.069 [Test worker] INFO  EdgeConnectorTest - Testing EP1 flags
+
+S14:52:03.069 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+
+_14:52:03.069 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+H14:52:03.071 [Test worker] INFO  EdgeConnectorTest - Testing EP2 flags
+
+S14:52:03.071 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+
+_14:52:03.071 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+I14:52:03.071 [Test worker] INFO  EdgeConnectorTest - Testing edge cases
+
+S14:52:03.071 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+
+_14:52:03.071 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+P14:52:03.071 [Test worker] INFO  EdgeConnectorTest - Testing flag independence
+
+S14:52:03.071 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+
+_14:52:03.071 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+e14:52:03.071 [Test worker] INFO  EdgeConnectorTest - Testing constructor with invalid numeric input
+
+_14:52:03.071 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+a14:52:03.072 [Test worker] ERROR EdgeConnector - Error parsing numeric values from input string
+
+>java.lang.NumberFormatException: For input string: "invalid"
+
+d	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+
+C	at java.base/java.lang.Integer.parseInt(Integer.java:665) ~[?:?]
+
+C	at java.base/java.lang.Integer.parseInt(Integer.java:781) ~[?:?]
+
+;	at EdgeConnector.<init>(EdgeConnector.java:19) [main/:?]
+
+T	at EdgeConnectorTest.testInvalidNumericInput(EdgeConnectorTest.java:34) [test/:?]
+
+r	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+
+G	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+
+t	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) [junit-4.13.2.jar:4.13.2]
+
+s	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.2.jar:4.13.2]
+
+r	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) [junit-4.13.2.jar:4.13.2]
+
+q	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.13.2.jar:4.13.2]
+
+w	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.13.2.jar:4.13.2]
+
+m	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.13.2.jar:4.13.2]
+
+`	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+
+t	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100) [junit-4.13.2.jar:4.13.2]
+
+]	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+
+r	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103) [junit-4.13.2.jar:4.13.2]
+
+q	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63) [junit-4.13.2.jar:4.13.2]
+
+[	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+
+_	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+
+a	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+
+_	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+
+`	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+
+`	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+
+Y	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+
+¨	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112) [gradle-testing-jvm-infrastructure-8.10.2.jar:8.10.2]
+
+¶	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-infrastructure-8.10.2.jar:8.10.2]
+
+¶	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40) [gradle-testing-jvm-infrastructure-8.10.2.jar:8.10.2]
+
+¡	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54) [gradle-testing-jvm-infrastructure-8.10.2.jar:8.10.2]
+
+¨	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+
+r	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+
+G	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-8.10.2.jar:8.10.2]
+
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-8.10.2.jar:8.10.2]
+
+è	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-8.10.2.jar:8.10.2]
+
+û	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) [gradle-messaging-8.10.2.jar:8.10.2]
+
+J	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source) [?:?]
+
+è	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+
+¶	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+
+ë	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+
+ê	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+
+í	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) [gradle-worker-main-8.10.2.jar:8.10.2]
+
+™	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121) [gradle-worker-main-8.10.2.jar:8.10.2]
+
+©	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) [gradle-worker-main-8.10.2.jar:8.10.2]
+
+t	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) [gradle-worker.jar:?]
+
+u	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) [gradle-worker.jar:?]
+
+S14:52:03.079 [Test worker] INFO  EdgeConnectorTest - Setting up EdgeConnectorTest
+
+_14:52:03.079 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+
+_14:52:03.079 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+Y14:52:03.081 [Test worker] INFO  EdgeConvertCreateDDLTest - Setting up test environment
+W14:52:03.081 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.081 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:03.081 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:03.081 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.081 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:03.081 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.081 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.081 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.082 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+h14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDLTest - Testing initialization with unbound fields
+W14:52:03.082 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.082 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.082 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.082 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+[14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+[14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDLTest - Tearing down test environment
+Y14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDLTest - Setting up test environment
+W14:52:03.082 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.082 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:03.082 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:03.082 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.082 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:03.082 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.082 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.082 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.082 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+f14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDLTest - Testing initialization with bound fields
+[14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+[14:52:03.082 [Test worker] INFO  EdgeConvertCreateDDLTest - Tearing down test environment
+Y14:52:03.083 [Test worker] INFO  EdgeConvertCreateDDLTest - Setting up test environment
+W14:52:03.083 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.083 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:03.083 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:03.083 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.083 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:03.083 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.083 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.083 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.083 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.083 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.083 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+_14:52:03.083 [Test worker] INFO  EdgeConvertCreateDDLTest - Testing parameterized constructor
+[14:52:03.083 [Test worker] INFO  EdgeConvertCreateDDLTest - Tearing down test environment
+Y14:52:03.083 [Test worker] INFO  EdgeConvertCreateDDLTest - Setting up test environment
+W14:52:03.083 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.083 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:03.083 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:03.084 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.084 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:03.084 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.084 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.084 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.084 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.084 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.084 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+T14:52:03.084 [Test worker] INFO  EdgeConvertCreateDDLTest - Testing SQL generation
+[14:52:03.084 [Test worker] INFO  EdgeConvertCreateDDLTest - Tearing down test environment
+Y14:52:03.084 [Test worker] INFO  EdgeConvertCreateDDLTest - Setting up test environment
+W14:52:03.084 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.084 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:03.084 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:03.085 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.085 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:03.085 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.085 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.085 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.085 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.085 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.085 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+`14:52:03.085 [Test worker] INFO  EdgeConvertCreateDDLTest - Testing table lookup functionality
+^14:52:03.085 [Test worker] WARN  EdgeConvertCreateDDL - No table found for figure number: -1
+[14:52:03.085 [Test worker] INFO  EdgeConvertCreateDDLTest - Tearing down test environment
+Y14:52:03.085 [Test worker] INFO  EdgeConvertCreateDDLTest - Setting up test environment
+W14:52:03.085 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.085 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:03.085 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:03.085 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.085 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:03.085 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.085 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.085 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.085 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+`14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDLTest - Testing field lookup functionality
+^14:52:03.086 [Test worker] WARN  EdgeConvertCreateDDL - No field found for figure number: -1
+[14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDLTest - Tearing down test environment
+Y14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDLTest - Setting up test environment
+W14:52:03.086 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.086 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:03.086 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:03.086 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.086 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:03.086 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.086 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.086 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.086 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+e14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDLTest - Testing initialization with null tables
+n14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.086 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+[14:52:03.087 [Test worker] INFO  EdgeConvertCreateDDLTest - Tearing down test environment
+Y14:52:03.087 [Test worker] INFO  EdgeConvertCreateDDLTest - Setting up test environment
+W14:52:03.087 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.087 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:03.087 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:03.087 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.087 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:03.087 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.087 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.087 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.087 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.087 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.087 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+f14:52:03.087 [Test worker] INFO  EdgeConvertCreateDDLTest - Testing initialization with empty tables
+n14:52:03.087 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.087 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+[14:52:03.087 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+[14:52:03.088 [Test worker] INFO  EdgeConvertCreateDDLTest - Tearing down test environment
+Y14:52:03.088 [Test worker] INFO  EdgeConvertCreateDDLTest - Setting up test environment
+W14:52:03.088 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.088 [Test worker] INFO  EdgeField - dataType set to: 0 (Varchar)
+G14:52:03.088 [Test worker] INFO  EdgeField - varcharValue set to: 255
+W14:52:03.088 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+K14:52:03.088 [Test worker] INFO  EdgeField - dataType set to: 2 (Integer)
+W14:52:03.088 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.088 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+N14:52:03.088 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+N14:52:03.088 [Test worker] INFO  EdgeTable - Converting ArrayLists to arrays
+n14:52:03.088 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with tables and fields
+[14:52:03.088 [Test worker] INFO  EdgeConvertCreateDDL - Initializing EdgeConvertCreateDDL
+Y14:52:03.088 [Test worker] INFO  EdgeConvertCreateDDLTest - Testing default constructor
+p14:52:03.088 [Test worker] INFO  EdgeConvertCreateDDL - Creating EdgeConvertCreateDDL with default constructor
+[14:52:03.088 [Test worker] INFO  EdgeConvertCreateDDLTest - Tearing down test environment
+q14:52:03.097 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+Q14:52:03.097 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+X14:52:03.098 [Test worker] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+L14:52:03.098 [Test worker] INFO  EdgeConvertFileParser - Parsing Edge file
+U14:52:03.098 [Test worker] INFO  EdgeConvertFileParser - Finished parsing Edge file
+O14:52:03.098 [Test worker] INFO  EdgeConvertFileParser - Resolving connectors
+X14:52:03.098 [Test worker] INFO  EdgeConvertFileParser - Finished resolving connectors
+]14:52:03.098 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+q14:52:03.100 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+Q14:52:03.100 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+X14:52:03.100 [Test worker] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+L14:52:03.100 [Test worker] INFO  EdgeConvertFileParser - Parsing Edge file
+W14:52:03.101 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+W14:52:03.102 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+W14:52:03.102 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+_14:52:03.104 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+_14:52:03.104 [Test worker] INFO  EdgeConnector - Creating new EdgeConnector from input string
+U14:52:03.104 [Test worker] INFO  EdgeConvertFileParser - Finished parsing Edge file
+O14:52:03.104 [Test worker] INFO  EdgeConvertFileParser - Resolving connectors
+X14:52:03.104 [Test worker] INFO  EdgeConvertFileParser - Finished resolving connectors
+]14:52:03.104 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+ q14:52:03.106 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+ Q14:52:03.106 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+ X14:52:03.106 [Test worker] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+ L14:52:03.106 [Test worker] INFO  EdgeConvertFileParser - Parsing Edge file
+ U14:52:05.059 [Test worker] INFO  EdgeConvertFileParser - Finished parsing Edge file
+ O14:52:05.059 [Test worker] INFO  EdgeConvertFileParser - Resolving connectors
+ X14:52:05.059 [Test worker] INFO  EdgeConvertFileParser - Finished resolving connectors
+ ]14:52:05.059 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+!q14:52:05.061 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+!Q14:52:05.061 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+!X14:52:05.061 [Test worker] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+!L14:52:05.061 [Test worker] INFO  EdgeConvertFileParser - Parsing Edge file
+!W14:52:05.061 [Test worker] INFO  EdgeField - Creating new EdgeField from input string
+!U14:52:05.063 [Test worker] INFO  EdgeConvertFileParser - Finished parsing Edge file
+!O14:52:05.063 [Test worker] INFO  EdgeConvertFileParser - Resolving connectors
+!X14:52:05.063 [Test worker] INFO  EdgeConvertFileParser - Finished resolving connectors
+!]14:52:05.063 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+"q14:52:05.064 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+"Q14:52:05.064 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+"X14:52:05.065 [Test worker] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+"L14:52:05.065 [Test worker] INFO  EdgeConvertFileParser - Parsing Edge file
+"U14:52:05.065 [Test worker] INFO  EdgeConvertFileParser - Finished parsing Edge file
+"O14:52:05.065 [Test worker] INFO  EdgeConvertFileParser - Resolving connectors
+"X14:52:05.065 [Test worker] INFO  EdgeConvertFileParser - Finished resolving connectors
+"]14:52:05.065 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+#q14:52:05.066 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+#Q14:52:05.066 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+#X14:52:05.067 [Test worker] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+#L14:52:05.067 [Test worker] INFO  EdgeConvertFileParser - Parsing Edge file
+#W14:52:05.067 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+#U14:52:05.067 [Test worker] INFO  EdgeConvertFileParser - Finished parsing Edge file
+#O14:52:05.067 [Test worker] INFO  EdgeConvertFileParser - Resolving connectors
+#X14:52:05.067 [Test worker] INFO  EdgeConvertFileParser - Finished resolving connectors
+#]14:52:05.067 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+$q14:52:05.069 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+$Q14:52:05.069 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+$X14:52:05.069 [Test worker] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+$L14:52:05.069 [Test worker] INFO  EdgeConvertFileParser - Parsing Edge file
+$U14:52:07.695 [Test worker] INFO  EdgeConvertFileParser - Finished parsing Edge file
+$O14:52:07.695 [Test worker] INFO  EdgeConvertFileParser - Resolving connectors
+$X14:52:07.695 [Test worker] INFO  EdgeConvertFileParser - Finished resolving connectors
+$]14:52:07.695 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+%q14:52:07.698 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+%Q14:52:07.698 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+%X14:52:07.698 [Test worker] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+%L14:52:07.698 [Test worker] INFO  EdgeConvertFileParser - Parsing Edge file
+%W14:52:07.698 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+%U14:52:07.698 [Test worker] INFO  EdgeConvertFileParser - Finished parsing Edge file
+%O14:52:07.698 [Test worker] INFO  EdgeConvertFileParser - Resolving connectors
+%X14:52:07.698 [Test worker] INFO  EdgeConvertFileParser - Finished resolving connectors
+%]14:52:07.698 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+&q14:52:07.700 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+&Q14:52:07.700 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+&S14:52:07.701 [Test worker] ERROR EdgeConvertFileParser - Unrecognized file format
+&]14:52:08.825 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+'q14:52:08.826 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: test.edg
+'Q14:52:08.826 [Test worker] INFO  EdgeConvertFileParser - Opening file: test.edg
+'X14:52:08.828 [Test worker] INFO  EdgeConvertFileParser - Detected Edge Diagrammer file
+'L14:52:08.828 [Test worker] INFO  EdgeConvertFileParser - Parsing Edge file
+'W14:52:08.828 [Test worker] INFO  EdgeTable - Creating new EdgeTable from input string
+'U14:52:12.408 [Test worker] INFO  EdgeConvertFileParser - Finished parsing Edge file
+'O14:52:12.410 [Test worker] INFO  EdgeConvertFileParser - Resolving connectors
+'X14:52:12.410 [Test worker] INFO  EdgeConvertFileParser - Finished resolving connectors
+']14:52:12.410 [Test worker] INFO  EdgeConvertFileParser - Finished processing file: test.edg
+(x14:52:12.411 [Test worker] INFO  EdgeConvertFileParser - Initializing EdgeConvertFileParser with file: nonexistent.edg
+(X14:52:12.411 [Test worker] INFO  EdgeConvertFileParser - Opening file: nonexistent.edg
+(Z14:52:12.411 [Test worker] ERROR EdgeConvertFileParser - File not found: nonexistent.edg
+(\java.io.FileNotFoundException: nonexistent.edg (The system cannot find the file specified)
+(C	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+(M	at java.base/java.io.FileInputStream.open(FileInputStream.java:219) ~[?:?]
+(O	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158) ~[?:?]
+(D	at java.base/java.io.FileReader.<init>(FileReader.java:75) ~[?:?]
+(>	at ParseEdgeFile.openFile(ParseEdgeFile.java:147) [main/:?]
+(;	at ParseEdgeFile.<init>(ParseEdgeFile.java:23) [main/:?]
+(k	at EdgeConvertFileParserTest.testConstructorWithInvalidFile(EdgeConvertFileParserTest.java:50) [test/:?]
+(r	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+(G	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+(t	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59) [junit-4.13.2.jar:4.13.2]
+(s	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.2.jar:4.13.2]
+(r	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56) [junit-4.13.2.jar:4.13.2]
+(q	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.13.2.jar:4.13.2]
+(w	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19) [junit-4.13.2.jar:4.13.2]
+(m	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.13.2.jar:4.13.2]
+(k	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27) [junit-4.13.2.jar:4.13.2]
+(e	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54) [junit-4.13.2.jar:4.13.2]
+(`	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+(t	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100) [junit-4.13.2.jar:4.13.2]
+(]	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366) [junit-4.13.2.jar:4.13.2]
+(r	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103) [junit-4.13.2.jar:4.13.2]
+(q	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63) [junit-4.13.2.jar:4.13.2]
+([	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+(_	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+(a	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+(_	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+(`	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+(`	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+(Y	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+(¨	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112) [gradle-testing-jvm-infrastructure-8.10.2.jar:8.10.2]
+(¶	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58) [gradle-testing-jvm-infrastructure-8.10.2.jar:8.10.2]
+(¶	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40) [gradle-testing-jvm-infrastructure-8.10.2.jar:8.10.2]
+(¡	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54) [gradle-testing-jvm-infrastructure-8.10.2.jar:8.10.2]
+(¨	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+(r	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+(G	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[?:?]
+(	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36) [gradle-messaging-8.10.2.jar:8.10.2]
+(	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24) [gradle-messaging-8.10.2.jar:8.10.2]
+(è	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33) [gradle-messaging-8.10.2.jar:8.10.2]
+(û	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92) [gradle-messaging-8.10.2.jar:8.10.2]
+(J	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source) [?:?]
+(è	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+(¶	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+(ë	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+(ê	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63) [gradle-testing-base-infrastructure-8.10.2.jar:8.10.2]
+(í	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56) [gradle-worker-main-8.10.2.jar:8.10.2]
+(™	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121) [gradle-worker-main-8.10.2.jar:8.10.2]
+(©	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71) [gradle-worker-main-8.10.2.jar:8.10.2]
+(t	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69) [gradle-worker.jar:?]
+(u	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74) [gradle-worker.jar:?]

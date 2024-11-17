@@ -1,8 +1,9 @@
-17:54:02.844 [main] INFO  RunEdgeConvert - Starting EdgeConvert application
-17:54:02.848 [main] INFO  EdgeConvertGUI - Initializing EdgeConvertGUI
-17:54:02.848 [main] INFO  EdgeConvertGUI - Showing GUI
-17:54:03.218 [main] DEBUG EdgeConvertGUI - Set system look and feel
-17:54:03.229 [main] INFO  EdgeConvertGUI - Creating Define Tables screen
-17:54:04.261 [main] INFO  EdgeConvertGUI - Creating Define Relations screen
-17:54:04.278 [main] INFO  RunEdgeConvert - EdgeConvert GUI initialized
-17:54:04.278 [main] INFO  RunEdgeConvert - EdgeConvert application finished
+14:57:40.228 [main] INFO  RunEdgeConvert - Starting EdgeConvert application
+14:57:40.232 [main] INFO  EdgeConvertGUI - Initializing EdgeConvertGUI
+14:57:40.232 [main] INFO  EdgeConvertGUI - Showing GUI
+14:57:40.308 [main] DEBUG EdgeConvertGUI - Set system look and feel
+14:57:40.308 [main] INFO  EdgeConvertGUI - Creating Define Tables screen
+14:57:40.952 [main] INFO  EdgeConvertGUI - Creating Define Relations screen
+14:57:40.974 [main] INFO  RunEdgeConvert - EdgeConvert GUI initialized
+14:57:40.974 [main] INFO  RunEdgeConvert - EdgeConvert application finished
+15:22:44.093 [AWT-EventQueue-0] INFO  EdgeConvertGUI - Window closing event triggered

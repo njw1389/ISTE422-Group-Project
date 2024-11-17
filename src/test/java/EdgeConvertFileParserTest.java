@@ -32,7 +32,7 @@ public class EdgeConvertFileParserTest {
             writer.write("EDGE Diagram File\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         
         // Verify initial state through getters
         EdgeTable[] tables = parser.getEdgeTables();
@@ -47,7 +47,7 @@ public class EdgeConvertFileParserTest {
     @Test(expected = FileNotFoundException.class)
     public void testConstructorWithInvalidFile() {
         File nonExistentFile = new File("nonexistent.edg");
-        parser = new EdgeConvertFileParser(nonExistentFile);
+        parser = new ParseEdgeFile(nonExistentFile);
     }
     
     @Test
@@ -62,7 +62,7 @@ public class EdgeConvertFileParserTest {
             writer.write("}\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         EdgeTable[] tables = parser.getEdgeTables();
         
         assertNotNull("Tables should not be null", tables);
@@ -81,7 +81,7 @@ public class EdgeConvertFileParserTest {
             writer.write("}\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         EdgeTable[] tables = parser.getEdgeTables();
         
         assertEquals("Should create one table", 1, tables.length);
@@ -100,7 +100,7 @@ public class EdgeConvertFileParserTest {
             writer.write("}\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         EdgeField[] fields = parser.getEdgeFields();
         
         assertEquals("Should create one field", 1, fields.length);
@@ -159,7 +159,7 @@ public class EdgeConvertFileParserTest {
             writer.write("}\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         EdgeTable[] tables = parser.getEdgeTables();
         EdgeField[] fields = parser.getEdgeFields();
         
@@ -180,7 +180,7 @@ public class EdgeConvertFileParserTest {
             writer.write("}\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         EdgeTable[] tables = parser.getEdgeTables();
         
         assertEquals("Should create one table", 1, tables.length);
@@ -194,7 +194,7 @@ public class EdgeConvertFileParserTest {
             writer.write("EDGE Diagram File\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         EdgeTable[] tables = parser.getEdgeTables();
         EdgeField[] fields = parser.getEdgeFields();
         
@@ -222,7 +222,7 @@ public class EdgeConvertFileParserTest {
             writer.write("}\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         // The parser should set EdgeConvertGUI.setReadSuccess(false) due to duplicate
         assertFalse("Should fail due to duplicate table names", EdgeConvertGUI.getReadSuccess());
     }
@@ -238,7 +238,7 @@ public class EdgeConvertFileParserTest {
             writer.write("}\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         // The parser should set EdgeConvertGUI.setReadSuccess(false) due to blank name
         assertFalse("Should fail due to blank names", EdgeConvertGUI.getReadSuccess());
     }
@@ -254,7 +254,7 @@ public class EdgeConvertFileParserTest {
             writer.write("}\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         // The parser should set EdgeConvertGUI.setReadSuccess(false) due to relations
         assertFalse("Should fail due to presence of relations", EdgeConvertGUI.getReadSuccess());
     }
@@ -266,7 +266,7 @@ public class EdgeConvertFileParserTest {
             writer.write("Some random content\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         // Don't assert on table length, just verify that no exception is thrown
         // and that getEdgeTables() returns either null or empty array
         EdgeTable[] tables = parser.getEdgeTables();
@@ -282,7 +282,7 @@ public class EdgeConvertFileParserTest {
             writer.write("Corrupted content without proper structure");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseEdgeFile(tempFile);
         EdgeTable[] tables = parser.getEdgeTables();
         assertEquals("Should have no tables for corrupted file", 0, tables.length);
     }
@@ -312,7 +312,7 @@ public class EdgeConvertFileParserTest {
             writer.write("4|orderDate|3|1|1|2|20|false|false\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseSaveFile(tempFile);
         EdgeTable[] tables = parser.getEdgeTables();
         EdgeField[] fields = parser.getEdgeFields();
         
@@ -343,7 +343,7 @@ public class EdgeConvertFileParserTest {
             writer.write("4|orderId|3|1|1|1|10|true|false\n");
         }
         
-        parser = new EdgeConvertFileParser(tempFile);
+        parser = new ParseSaveFile(tempFile);
         EdgeTable[] tables = parser.getEdgeTables();
         
         // Verify relationships
